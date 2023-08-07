@@ -1,0 +1,123 @@
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	background: #fff;
+	z-index: 11;
+	padding: 2.5rem 0;
+	transition: 0.3s ease-in-out;
+
+	&.scroll {
+		box-shadow: 0 0 1rem 0 rgba(#000, 0.32);
+	}
+
+	height: 11.5rem;
+	margin: 0 auto;
+}
+.d-nav {
+	ul {
+		li {
+			display: inline-block;
+			margin: 0 1rem;
+			a {}
+
+			&.active {}
+		}
+	}
+}
+
+.icon-menu {
+	display: none;
+}
+
+@media (max-width: 1199px) {
+	.d-nav {
+		display: none;
+	}
+
+	.icon-menu {
+		display: block;
+		width: 24px;
+		position: relative;
+		margin-left: 2rem;
+
+		span {
+			display: block;
+			background-color: #fff;
+			width: 100%;
+			margin: 1.5px 0;
+			border-radius: 3px;
+			height: 2px;
+			float: right;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:nth-child(2n+1) {
+				width: 18px;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.act-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 5.2rem;
+}
+
+.menu {
+	display: block;
+	i {
+		color: $c3;
+		font-size: 3rem;
+	}
+}
+
+.btn-main {
+	cursor: pointer;
+	width: 18rem;
+	height: 4.9rem;
+	border-radius: 10rem;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 600;
+	background-image: -webkit-linear-gradient(90deg, $c3 50%, transparent 50%);
+	background-image: linear-gradient(90deg, $c3 50%, transparent 50%);
+	background-size: 500px;
+	background-repeat: no-repeat;
+	background-position: 10%;
+	-webkit-transition: background 500ms ease-in-out;
+	transition: background 500ms ease-in-out;
+	-webkit-transition: background 500ms ease-in-out;
+	transition: background 500ms ease-in-out;
+	&:hover{
+		background-position: 100%;
+		background-color: $c3;
+	}
+}
+
+.btn-let-chat {
+	order: 2;
+	margin-left: auto;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	img {
+		height: 5.4rem;
+		width: 16rem;
+	}
+
+}

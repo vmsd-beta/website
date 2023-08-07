@@ -1,0 +1,78 @@
+ html,body {
+    font-size: 1.4rem;
+    font-family: $f1;
+    line-height: 1.5;
+    color: $c-text;
+    min-height: 100%;
+    -webkit-tab-hightlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+html{
+    font-size: 62.5%;
+    @media (max-width: 1600px) {
+        font-size: 54%;
+    }
+    @media (max-width: 1450px) {
+        font-size: 54%;
+    }
+    @media (max-width: 1200px) {
+        font-size: 54%;
+    }
+}
+.wrap {
+    overflow: hidden;
+}
+.delay02 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.delay03 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.delay04 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.delay05 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.delay06 {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.delay07 {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+.delay08 {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.delay09 {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+.delay10 {
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+}
+.delay12 {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.delay14 {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.delay16 {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+.delay18 {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}

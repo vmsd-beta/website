@@ -1,0 +1,62 @@
+footer {
+    height: 32rem;
+    background: #55575A;
+    section {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 7.5rem; 
+        .el:nth-child(2) {
+            grid-column: span 2;
+        }
+        .el {
+            margin-top: 4.2rem;
+            .ct-group {
+                display: flex;
+                justify-content: space-between;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 7.5rem; 
+            }
+            h1 {
+                font-size: 1.3rem;
+                font-weight: bold;
+                height: 2.6rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            .social {
+                margin: 2.6rem 0;
+            }
+            .ct {
+                margin-bottom: 2.6rem;
+                span {
+                    font-size: 1rem;
+                    display: block;
+                    p {
+                        font-weight: bold;
+                    }
+                }
+                h2 {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+                img {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .quick-link {
+
+            .ct {
+                margin-top: 1.3rem;
+                span {
+                    height: 2.6rem;
+                    line-height: 2.6rem;
+                }
+            }
+        }
+    }
+    color: $c2;
+}
