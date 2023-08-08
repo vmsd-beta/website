@@ -4,32 +4,99 @@ header {
 	top: 0;
 	width: 100%;
 	color: #fff;
-	background: #fff;
 	z-index: 11;
-	padding: 2.5rem 0;
 	transition: 0.3s ease-in-out;
 
 	&.scroll {
 		box-shadow: 0 0 1rem 0 rgba(#000, 0.32);
 	}
+}
+.menu-ct {
+	visibility: hidden;
+	opacity: 0;
+	z-index: -1;
+	transform: translateY(-100%);
+	transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+	transition-delay: 0.5s;
+}
 
+.btn-drop {
+	padding: 1rem;
+	i {
+		font-size: 3rem;
+	}
+	color: $c3;
+}
+
+.menu-drop:focus .menu-ct,
+.menu-drop:focus-within .menu-ct,
+.menu-drop:hover .menu-ct {
+  visibility: visible; 
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 1s;
+  cursor: pointer;
+}
+.header {
 	height: 11.5rem;
 	margin: 0 auto;
+	padding: 3rem 0;
+	background: #fff;
+	position: relative;
 }
-.d-nav {
-	ul {
-		li {
-			display: inline-block;
-			margin: 0 1rem;
-			a {}
 
-			&.active {}
-		}
-	}
+.dropdown:hover .dropdown-menu {
+	display: block;
 }
 
 .icon-menu {
 	display: none;
+}
+
+.menu-ct {
+	width: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.6);
+	top: 100%;
+	left: 0;
+	.el-group {
+		padding: 4.506666666% 0;
+		margin: 0 auto;
+		display: flex;
+		.el-category {
+			display: flex;
+			flex-wrap: wrap;
+			li{
+				width: 100%;
+				box-sizing: border-box;
+				font-size: 3.9rem;
+				display: inline-block;
+				&:hover {
+					color: $c3;
+					cursor: pointer;
+				}
+			}
+		}
+		.el-page {
+			display: flex;
+			flex-wrap: wrap;
+			li {
+				width: 50%;
+				box-sizing: border-box;
+				font-size: 1.6rem;
+				display: inline-block;
+				a {
+					&:hover {
+						border-bottom: 1px solid $c2;
+						cursor: pointer;
+						white-space: nowrap;
+					}
+				}
+			}
+			
+		}
+	}
 }
 
 @media (max-width: 1199px) {
@@ -118,6 +185,26 @@ header {
 	img {
 		height: 5.4rem;
 		width: 16rem;
+	}
+
+}
+
+@media (max-width: 760px) {
+	.btn-main {
+		width: 14rem;
+		height: 3.8rem;
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.act-header {
+		padding: 0px 2rem;
+	}
+	.logo {
+		img {
+			
+		}
 	}
 
 }
