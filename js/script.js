@@ -287,7 +287,7 @@ jQuery(function($) {
                     slidesToScroll: 1,
                     dots: false,
                     arrows: false,
-                    autoplay: true,
+                    autoplay: false,
                     autoplaySpeed: 2500,
                     swipeToSlide: true,
                     infinite: true,
@@ -321,45 +321,45 @@ jQuery(function($) {
                 })
             }
 
-            // if ($('.cas-multi-concert').length) {
-            //     $('.cas-multi-concert').slick({
-            //         slidesToShow: 7,
-            //         slidesToScroll: 2,
-            //         dots: false,
-            //         arrows: false,
-            //         autoplay: true,
-            //         autoplaySpeed: 2500,
-            //         swipeToSlide: true,
-            //         infinite: true,
-            //         speed: 1000,
-            //         responsive: [
-            //             {
-            //                 breakpoint: 1599,
-            //                 settings: {
-            //                     slidesToShow: 7,
-            //                 }
-            //             },
-            //             {
-            //                 breakpoint: 1199,
-            //                 settings: {
-            //                     slidesToShow: 6,
-            //                 }
-            //             },
-            //             {
-            //                 breakpoint: 991,
-            //                 settings: {
-            //                     slidesToShow: 4,
-            //                 }
-            //             },
-            //             {
-            //                 breakpoint: 676,
-            //                 settings: {
-            //                     slidesToShow: 3,
-            //                 }
-            //             }
-            //         ],
-            //     })
-            // }
+            if ($('.cas-multi-concert').length) {
+                $('.cas-multi-concert').slick({
+                    slidesToShow: 7,
+                    slidesToScroll: 2,
+                    dots: false,
+                    arrows: false,
+                    autoplay: false,
+                    autoplaySpeed: 2500,
+                    swipeToSlide: false,
+                    infinite: flase,
+                    speed: 1000,
+                    responsive: [
+                        {
+                            breakpoint: 1599,
+                            settings: {
+                                slidesToShow: 7,
+                            }
+                        },
+                        {
+                            breakpoint: 1199,
+                            settings: {
+                                slidesToShow: 6,
+                            }
+                        },
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                slidesToShow: 4,
+                            }
+                        },
+                        {
+                            breakpoint: 676,
+                            settings: {
+                                slidesToShow: 3,
+                            }
+                        }
+                    ],
+                })
+            }
 
             $('.slider-for').slick({
                 slidesToShow: 1,
@@ -654,14 +654,5 @@ jQuery(function($) {
     $('.d-nav').hc_menu({
         open: '.open-mnav',
     })
-
-
-
-
-
-
-
-
-
 
 })
