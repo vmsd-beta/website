@@ -501,7 +501,9 @@ body{
 }
 
 @media (max-width: 760px) {
-
+    h1 {
+        font-size: 3rem !important;
+    }
     .container-home {
         padding: 0;
     }
@@ -510,11 +512,23 @@ body{
             font-size: 3rem !important;
         }
     }
-
+    .title   {
+        margin-top: 4rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .ct-product {
+        margin-top: 4rem !important;
+        margin-bottom: 2rem !important;
+        h1 {
+            margin-bottom: 2.5rem;
+        }
+    }
 }
 
 @media (max-width: 600px) {
-
+    body {
+        margin-top: 8.5rem;
+    }
     .container-home {
         padding: 0 5rem ;
     }
@@ -534,6 +548,22 @@ body{
                 -webkit-box-orient: vertical;
             }
         }
+        .content-banner {
+            .btn-about {
+                margin-top: 2rem;
+            } 
+        } 
     }
-
+    .ct-more  {
+        span {
+            font-size: 2rem !important;
+        }
+        i {
+            font-size: 1.5rem !important;
+            margin-right: 2rem !important;
+        }
+    }
+    .ct-product .ct {
+        width: 90%;
+    }
 }

@@ -19,7 +19,7 @@ footer {
                 gap: 7.5rem; 
             }
             h1 {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 font-weight: bold;
                 height: 2.6rem;
             }
@@ -32,14 +32,14 @@ footer {
             .ct {
                 margin-bottom: 2.6rem;
                 span {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     display: block;
                     p {
                         font-weight: bold;
                     }
                 }
                 h2 {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     font-weight: bold;
                 }
                 img {
@@ -59,4 +59,83 @@ footer {
         }
     }
     color: $c2;
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: auto;
+        section {
+            display: block;
+            .el:not(:last-child) {
+                &:hover {
+                    cursor: pointer;
+                }
+                margin-top: 0;
+                h1 {
+                    font-size: 2rem !important;
+                    border-bottom: 1px solid gray;
+                    width:100%;
+                    padding: 1rem 0;
+                    height: auto;
+                    position: relative;
+                    .el-group {
+                        transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+                        transition-delay: 0.5s;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 60%;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 5px 5px 0 5px; /* Điều chỉnh giá trị 10px tùy theo kích thước bạn muốn */
+                        border-color: $c2 transparent transparent transparent; /* Điều chỉnh màu sắc tùy ý */
+                        transform: translate(-50%, -100%);
+                    }
+                }
+                .ct {
+                    padding: 0 2rem;
+                }
+                h2 {
+                    font-size: 1.8rem;
+                }
+                span {
+                    font-size: 1.5rem;
+                    padding: 0 3rem;
+                }
+                .ct-group {
+                    display: block;
+                }
+                // .el-group {
+                //     // display: none;
+                //     height: 0;
+                //     overflow: hidden;
+                //     transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+                //     transition-delay: 0.5s;
+                // }
+            }
+            .el:last-child {
+                text-align: center;
+                h1 {
+                    font-size: 2rem !important;
+                }
+                img {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        // .active {
+        //     opacity: 1 !important;
+        //     transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+        //     transition-delay: 0.5s;
+        //     height: 100% !important;
+        // }
+    }
 }

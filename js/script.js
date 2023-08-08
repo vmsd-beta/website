@@ -655,4 +655,24 @@ jQuery(function($) {
         open: '.open-mnav',
     })
 
+    $(document).ready(function() {
+    // Ẩn tất cả các .el-group mặc định
+        if (window.innerWidth <= 768) {
+            $('footer .el-group').hide();
+                $('.el > h1').click(function() {
+                    var elGroup = $(this).next('.el-group');
+                    
+                    if (elGroup.hasClass('active')) {
+                        elGroup.slideUp();
+                        elGroup.removeClass('active');
+                    } else {
+                        $('.el-group').removeClass('active');
+                        elGroup.slideDown();
+                        elGroup.addClass('active');
+                    }
+                });
+            } else {
+                $('footer .el-group').show();
+            }
+        });
 })

@@ -1051,9 +1051,18 @@ header.scroll {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.logo img {
-  height: 5.4rem;
+.logo .img {
+  position: relative;
+  display: block;
+  padding-top: 33.75%;
   width: 16rem;
+}
+.logo .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  height: 100%;
 }
 
 @media (max-width: 760px) {
@@ -1064,8 +1073,18 @@ header.scroll {
   }
 }
 @media (max-width: 600px) {
+  .header {
+    height: 8.5rem;
+    padding: 2rem 0;
+  }
   .act-header {
     padding: 0px 2rem;
+  }
+  .logo {
+    top: 36%;
+  }
+  .logo .img {
+    width: 10rem;
   }
 }
 footer {
@@ -1104,7 +1123,7 @@ footer section .el .ct-group {
   gap: 7.5rem;
 }
 footer section .el h1 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   height: 2.6rem;
 }
@@ -1118,14 +1137,14 @@ footer section .el .ct {
   margin-bottom: 2.6rem;
 }
 footer section .el .ct span {
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: block;
 }
 footer section .el .ct span p {
   font-weight: bold;
 }
 footer section .el .ct h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 footer section .el .ct img {
@@ -1139,6 +1158,72 @@ footer section .quick-link .ct span {
   line-height: 2.6rem;
 }
 
+@media (max-width: 768px) {
+  footer {
+    height: auto;
+  }
+  footer section {
+    display: block;
+  }
+  footer section .el:not(:last-child) {
+    margin-top: 0;
+  }
+  footer section .el:not(:last-child):hover {
+    cursor: pointer;
+  }
+  footer section .el:not(:last-child) h1 {
+    font-size: 2rem !important;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: 1rem 0;
+    height: auto;
+    position: relative;
+  }
+  footer section .el:not(:last-child) h1 .el-group {
+    -webkit-transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+    transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  footer section .el:not(:last-child) h1::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px; /* Điều chỉnh giá trị 10px tùy theo kích thước bạn muốn */
+    border-color: #ffffff transparent transparent transparent; /* Điều chỉnh màu sắc tùy ý */
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+  footer section .el:not(:last-child) .ct {
+    padding: 0 2rem;
+  }
+  footer section .el:not(:last-child) h2 {
+    font-size: 1.8rem;
+  }
+  footer section .el:not(:last-child) span {
+    font-size: 1.5rem;
+    padding: 0 3rem;
+  }
+  footer section .el:not(:last-child) .ct-group {
+    display: block;
+  }
+  footer section .el:last-child {
+    text-align: center;
+  }
+  footer section .el:last-child h1 {
+    font-size: 2rem !important;
+  }
+  footer section .el:last-child img:hover {
+    cursor: pointer;
+  }
+  footer section .el:last-child span {
+    font-size: 1.5rem;
+  }
+}
 body {
   margin-top: 11.5rem;
 }
@@ -1568,14 +1653,31 @@ body {
   }
 }
 @media (max-width: 760px) {
+  h1 {
+    font-size: 3rem !important;
+  }
   .container-home {
     padding: 0;
   }
   .content-banner h1 {
     font-size: 3rem !important;
   }
+  .title {
+    margin-top: 4rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .ct-product {
+    margin-top: 4rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .ct-product h1 {
+    margin-bottom: 2.5rem;
+  }
 }
 @media (max-width: 600px) {
+  body {
+    margin-top: 8.5rem;
+  }
   .container-home {
     padding: 0 5rem;
   }
@@ -1588,6 +1690,19 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+  }
+  .home-banner-color .content-banner .btn-about {
+    margin-top: 2rem;
+  }
+  .ct-more span {
+    font-size: 2rem !important;
+  }
+  .ct-more i {
+    font-size: 1.5rem !important;
+    margin-right: 2rem !important;
+  }
+  .ct-product .ct {
+    width: 90%;
   }
 }
 .ct-main-group .el-group .ct {
