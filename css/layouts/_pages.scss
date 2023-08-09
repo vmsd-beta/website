@@ -1,11 +1,25 @@
 .ct-main-group {
     .el-group {
+        .trade-show {
+            .el {
+                width: 100% !important;
+                .slick-track {
+                    width: auto !important;
+                    display: flex !important;
+                    justify-content: space-between !important;
+                    .slick-slide {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
         .ct {
             margin: 11rem 0;
             display: flex;
             align-items: center;
+            
             .item-1 {
-                padding-bottom: 20rem;
+                // padding-bottom: 20rem;
                 h1 {
                     font-size: 2.8rem;
                     font-weight: bold;
@@ -46,6 +60,7 @@
                         }
                     }
                 }
+
                 .prev {
                     position: absolute;
                     left: 5%;
@@ -124,8 +139,9 @@
         top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
-        display: flex;
         justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
         .img {
             position: relative;
             padding-top: 149.130434783%;
@@ -142,6 +158,8 @@
 
         .el {
             position: relative;
+            width: 22%;
+            box-sizing: border-box;
             .info {
                 position: absolute;
                 left: 0%;
@@ -228,7 +246,7 @@
                         overflow: hidden;
                         text-overflow: ellipsis;
                         display: -webkit-box;
-                        -webkit-line-clamp: 5;
+                        -webkit-line-clamp: 7;
                         -webkit-box-orient: vertical;
                         margin: 0 !important;
                     }

@@ -502,7 +502,7 @@ body{
 
     .learn-more {
         .ct {
-            width: 38.9rem;
+            width: 58.9rem !important;
             padding: 3rem 0;
             h1 {
                 font-size: 4.8rem;
@@ -537,6 +537,20 @@ body{
         margin-bottom: 2rem !important;
         h1 {
             margin-bottom: 2.5rem;
+        }
+    }
+    .learn-more {
+        .ct {
+            width: 38.9rem !important;
+            padding: 3rem 0;
+            h1 {
+                font-size: 4.8rem;
+                font-weight: bold;
+                
+            }
+            button {
+                color: $c2;
+            }
         }
     }
     .content-banner {
