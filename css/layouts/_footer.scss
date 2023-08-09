@@ -54,6 +54,13 @@ footer {
                 span {
                     height: 2.6rem;
                     line-height: 2.6rem;
+                    a {
+                        padding: 2px;
+                        &:hover {
+                            border-bottom: 1px solid $c2;
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }

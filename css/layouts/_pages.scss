@@ -212,3 +212,33 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .ct-main-group {
+        .el-group {
+            .ct {
+                margin-top: 2rem;
+                margin-bottom: 4rem;
+                display: block;
+                .item-1 {
+                    padding-bottom: 0px !important;
+                    padding-right: 0px !important;
+                    padding-left: 2rem !important;
+                    span {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 5;
+                        -webkit-box-orient: vertical;
+                        margin: 0 !important;
+                    }
+                    .btn-start-project {
+                         text-align: end;
+                        padding-right: 2rem !important;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1065,11 +1065,20 @@ header.scroll {
   height: 100%;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .btn-main {
     width: 14rem;
     height: 3.8rem;
     font-size: 1.3rem;
+  }
+  .menu-ct {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .menu-ct .el-group .el-category {
+    font-size: 3rem;
+  }
+  .menu-ct .el-group .el-page li {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -1156,6 +1165,13 @@ footer section .quick-link .ct {
 footer section .quick-link .ct span {
   height: 2.6rem;
   line-height: 2.6rem;
+}
+footer section .quick-link .ct span a {
+  padding: 2px;
+}
+footer section .quick-link .ct span a:hover {
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1614,7 +1630,6 @@ body {
 }
 
 .learn-more {
-  height: 31.8rem;
   background: #FF6C0E;
   text-align: center;
   display: -webkit-box;
@@ -1630,6 +1645,7 @@ body {
 }
 .learn-more .ct {
   width: 58.9rem;
+  padding: 10rem 0;
 }
 .learn-more .ct h1 {
   font-size: 4.8rem;
@@ -1639,7 +1655,7 @@ body {
   color: #ffffff;
 }
 
-@media (max-width: 99.9rem) {
+@media (max-width: 1024px) {
   .content-banner h1 {
     width: auto;
     padding: 0;
@@ -1650,6 +1666,17 @@ body {
   }
   .ct-concert h1 {
     width: auto !important;
+  }
+  .learn-more .ct {
+    width: 38.9rem;
+    padding: 3rem 0;
+  }
+  .learn-more .ct h1 {
+    font-size: 4.8rem;
+    font-weight: bold;
+  }
+  .learn-more .ct button {
+    color: #ffffff;
   }
 }
 @media (max-width: 760px) {
@@ -1672,6 +1699,13 @@ body {
   }
   .ct-product h1 {
     margin-bottom: 2.5rem;
+  }
+  .content-banner h1 {
+    width: 70%;
+    padding: 0;
+  }
+  .content-banner img {
+    width: 60%;
   }
 }
 @media (max-width: 600px) {
@@ -1926,4 +1960,30 @@ body {
   width: 70%;
   border: 0.2rem solid #FF6C0E;
   border-radius: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .ct-main-group .el-group .ct {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: block;
+  }
+  .ct-main-group .el-group .ct .item-1 {
+    padding-bottom: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 2rem !important;
+  }
+  .ct-main-group .el-group .ct .item-1 span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin: 0 !important;
+  }
+  .ct-main-group .el-group .ct .item-1 .btn-start-project {
+    text-align: end;
+    padding-right: 2rem !important;
+    margin-top: 1rem;
+  }
 }

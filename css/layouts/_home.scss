@@ -462,7 +462,7 @@ body{
 }
 
 .learn-more {
-    height: 31.8rem;
+    // height: 31.8rem;
     background: $c3;
     text-align: center;
     display: flex;
@@ -471,6 +471,7 @@ body{
     color: white;
     .ct {
         width: 58.9rem;
+        padding: 10rem 0;
         h1 {
             font-size: 4.8rem;
             font-weight: bold;
@@ -482,7 +483,7 @@ body{
     }
 }
 
-@media (max-width: 99.9rem) {
+@media (max-width: 1024px) {
     .content-banner {
         h1 {
             width: auto;
@@ -496,6 +497,21 @@ body{
     .ct-concert {
         h1 {
             width: auto !important;
+        }
+    }
+
+    .learn-more {
+        .ct {
+            width: 38.9rem;
+            padding: 3rem 0;
+            h1 {
+                font-size: 4.8rem;
+                font-weight: bold;
+                
+            }
+            button {
+                color: $c2;
+            }
         }
     }
 }
@@ -521,6 +537,15 @@ body{
         margin-bottom: 2rem !important;
         h1 {
             margin-bottom: 2.5rem;
+        }
+    }
+    .content-banner {
+        h1 {
+            width: 70%;
+            padding: 0;
+        }
+        img {
+            width: 60%;
         }
     }
 }
