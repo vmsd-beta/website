@@ -149,12 +149,17 @@ footer {
                     font-size: 1.5rem;
                 }
             }
+            .el {
+                .social {
+                    margin: 0;
+                }
+                .ct {
+                    margin-bottom: 0 !important;
+                    img {
+                        padding: 1rem 0.5rem;
+                    }
+                }
+            }
         }
-        // .active {
-        //     opacity: 1 !important;
-        //     transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
-        //     transition-delay: 0.5s;
-        //     height: 100% !important;
-        // }
     }
 }

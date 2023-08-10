@@ -1247,6 +1247,15 @@ footer section .quick-link .ct span a:hover {
   footer section .el:last-child span {
     font-size: 1.5rem;
   }
+  footer section .el .social {
+    margin: 0;
+  }
+  footer section .el .ct {
+    margin-bottom: 0 !important;
+  }
+  footer section .el .ct img {
+    padding: 1rem 0.5rem;
+  }
 }
 body {
   margin-top: 11.5rem;
@@ -2102,8 +2111,8 @@ body {
   }
   .expert .el-group .ct-group {
     position: relative;
-    width: 100%;
-    margin-bottom: 10rem;
+    width: 80%;
+    margin: 10rem auto;
   }
   .expert .el-group .ct-group > .img {
     display: block;
@@ -2117,6 +2126,53 @@ body {
   }
   .expert .el-group .ct-group > .img img {
     height: 100%;
+  }
+  .expert .el-group .ct-group .ct .el {
+    width: 40% !important;
+  }
+  .expert .el-group .ct-group .ct .el .info {
+    left: 50% !important;
+  }
+  .expert .el-group .ct-group .ct .el .info h1 {
+    font-size: 3rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .expert {
+    margin-bottom: 0rem;
+  }
+  .expert > .img {
+    display: none;
+  }
+  .expert .el-group {
+    display: block;
+    position: static !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  .expert .el-group .ct-group {
+    position: relative;
+    width: 100%;
+    margin: 10rem auto;
+  }
+  .expert .el-group .ct-group > .img {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+  .expert .el-group .ct-group > .img img {
+    height: 100%;
+  }
+  .expert .el-group .ct-group .ct .el {
+    width: 45% !important;
   }
   .expert .el-group .ct-group .ct .el .info {
     left: 50% !important;
