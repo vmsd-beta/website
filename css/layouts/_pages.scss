@@ -121,8 +121,11 @@
 
 .expert {
     position: relative;
+    text-align: center;
+    margin: 0 auto;
     margin-bottom: 25rem;
-    .img {
+    position: relative;
+    > .img {
         position: relative;
         display: block;
         padding-top: 23.142613151%;
@@ -135,62 +138,83 @@
         }
     }
     .el-group {
+        display: flex;
         position: absolute;
         top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
         justify-content: space-around;
-        display: flex;
-        flex-wrap: wrap;
-        .img {
-            position: relative;
-            padding-top: 149.130434783%;
-            display: block;
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+        width: 90%;
+        margin: 0px auto;
+        .ct-group {
+            > .img {
+                display: none;
+            }
+            width: 50%;
+            .ct {
+                display: flex;
+                justify-content: space-around;
+                .el {
+                    position: relative;
+                    width: 45%;
+                    box-sizing: border-box;
+                    img {
+                        display: block;
+                    }
+                    .info {
+                        position: absolute;
+                        left: 0%;
+                        top: 80%;
+                        transform: translate(-50%, -50%);
+                        color: $c2;
+                        opacity: 0;
+                        h1 {
+                            font-size: 2.4rem;
+                            font-weight: bold;
+                        }
+                        span {
+                            font-size: 1.4rem;
+                            white-space: nowrap;
+                        }
+                    }
+                    .img {
+                        position: relative;
+                        padding-top: 149.130434783%;
+                        display: block;
+                        img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .img-expert {
+                        margin: 0px auto;
+                        width: 100%;
+                    }
+                    .img-bg {
+                        opacity: 0;
+                        width: 100%;
+                    }
+        
+                    &:hover {
+                        .info {
+                            opacity: 1;
+                            transition: 1s ease-in-out;
+                            left: 40%;
+                            text-align: start;
+                        }
+                        .img-bg {
+                            opacity: 0.2;
+                        }
+                    }
+                }
             }
         }
 
 
-        .el {
-            position: relative;
-            width: 22%;
-            box-sizing: border-box;
-            .info {
-                position: absolute;
-                left: 0%;
-                top: 80%;
-                transform: translate(-50%, -50%);
-                color: $c2;
-                opacity: 0;
-                h1 {
-                    font-size: 2.4rem;
-                    font-weight: bold;
-                }
-                span {
-                    font-size: 1.4rem;
-                    white-space: nowrap;
-                }
-            }
-            .img-bg {
-                opacity: 0;
-            }
 
-            &:hover {
-                .info {
-                    opacity: 1;
-                    transition: 1s ease-in-out;
-                    left: 40%;
-                }
-                .img-bg {
-                    opacity: 0.2;
-                }
-            }
-        }
     }
 }
 
@@ -258,5 +282,65 @@
                 }
             }
         }
+    }
+
+    .ask {
+        margin-top: 0;
+        margin-bottom: 0;
+        .el {
+            display: block !important;
+            white-space: initial !important;
+            text-align: start;
+            label {
+                width: 100% !important;
+                margin: 2rem 0 1rem 0;
+            }
+            input {
+                width: 100% !important;
+                margin-bottom: 0;
+            }
+            textarea {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .expert {
+        > .img {
+            display:none;
+        }
+        margin-bottom: 0rem;
+        .el-group {
+            display: block;
+            position: static !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translate(0%, 0%);
+            .ct-group {
+                position: relative;
+                width: 100%;
+                margin-bottom: 10rem;
+                > .img {
+                    display: block;
+                    position: absolute;
+                    top: 10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                }
+                .ct {
+                    .el {
+                        .info {
+                            left: 50% !important;
+                            h1 {
+                                font-size: 3rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
