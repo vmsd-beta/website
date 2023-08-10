@@ -1069,7 +1069,8 @@ header.scroll {
   .btn-main {
     width: 14rem;
     height: 3.8rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 4.1rem;
   }
   .menu-ct {
     background-color: rgba(0, 0, 0, 0.9);
@@ -1176,6 +1177,11 @@ footer section .quick-link .ct span a:hover {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .el .el-group .ct-group {
+    display: block;
+  }
+}
 @media (max-width: 768px) {
   footer {
     height: auto;
@@ -1592,7 +1598,7 @@ body {
   transition: 1s ease-in-out;
 }
 .ct-more .ct .item .el button i {
-  font-size: 15px;
+  font-size: 4.5rem;
 }
 .ct-more .ct .item::before {
   content: "";
@@ -1655,6 +1661,9 @@ body {
 }
 .learn-more .ct button {
   color: #ffffff;
+}
+.learn-more .ct button i {
+  font-size: 4.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -1745,7 +1754,7 @@ body {
     font-size: 2rem !important;
   }
   .ct-more i {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
     margin-right: 2rem !important;
   }
   .ct-product .ct {
@@ -2034,7 +2043,7 @@ body {
 
 @media (max-width: 1024px) {
   .ct-main-group .el-group .ct {
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
     display: block;
   }

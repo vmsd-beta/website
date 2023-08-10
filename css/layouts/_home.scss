@@ -419,7 +419,7 @@ body{
                     text-align: end;
                     transition: 1s ease-in-out;
                     i {
-                        font-size: 15px;
+                        font-size: 4.5rem;
                     }
                 }
             }
@@ -479,6 +479,9 @@ body{
         }
         button {
             color: $c2;
+            i {
+                font-size: 4.5rem;
+            }
         }
     }
 }
@@ -598,7 +601,7 @@ body{
             font-size: 2rem !important;
         }
         i {
-            font-size: 1.5rem !important;
+            font-size: 2rem !important;
             margin-right: 2rem !important;
         }
     }
