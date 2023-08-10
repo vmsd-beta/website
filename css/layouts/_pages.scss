@@ -33,20 +33,35 @@
             }
             .item-2{
                 .slider-for {
-                    img {
-                        width: 100%;
-                        padding-top: 0.92857142857%;
+                    .img {
+                        display: block;
                         position: relative;
+                        padding-top: 20.857142857%;
+                        width: 100%;
+                        img {
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                        }
                     }
                 }
                 .slider-nav {
                     margin-top: 1.5rem;
-                    img {
-                        width: 100%;
-                        padding-top: 0.6862745098%;
+                    .img {
+                        display: block;
                         position: relative;
-                        &:hover{
-                            cursor: pointer;
+                        padding-top: 68.62745098%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                            &:hover{
+                                cursor: pointer;
+                            }
                         }
                     }
                 }

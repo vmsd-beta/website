@@ -369,7 +369,7 @@ jQuery(function($) {
                 asNavFor: '.slider-nav'
               });
               $('.slider-nav').slick({
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 asNavFor: '.slider-for',
                 dots: true,
