@@ -339,10 +339,14 @@
                 > .img {
                     display: block;
                     position: absolute;
-                    top: 10%;
+                    top: 40%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     width: 100%;
+                    height: 100%;
+                    img {
+                        height: 100%;
+                    }
                 }
                 .ct {
                     .el {

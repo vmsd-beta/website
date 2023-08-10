@@ -2099,11 +2099,15 @@ body {
   .expert .el-group .ct-group > .img {
     display: block;
     position: absolute;
-    top: 10%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 100%;
+    height: 100%;
+  }
+  .expert .el-group .ct-group > .img img {
+    height: 100%;
   }
   .expert .el-group .ct-group .ct .el .info {
     left: 50% !important;
