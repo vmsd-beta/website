@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Monterrat";
-  src: url("../fonts/Monterrat/Monterrat-Regular.ttf") format("truetype");
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Monterrat";
-  src: url("../fonts/Monterrat/Monterrat-Bold.ttf") format("truetype");
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 html[theme=dark_mode] {
