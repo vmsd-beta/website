@@ -1265,8 +1265,31 @@ body {
   width: 100%;
   position: relative;
 }
+.home-banner .img-index {
+  padding-top: 51.177083333%;
+  display: block;
+  position: relative;
+}
+.home-banner .img-index img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-banner .img-index:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
 .home-banner .img {
-  padding-top: 51.180555555%;
+  padding-top: 47.983310153%;
   display: block;
   position: relative;
 }
