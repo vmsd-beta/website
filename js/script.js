@@ -636,7 +636,6 @@ jQuery(function($) {
             } else {
                 $('footer .el-group').show();
             }
-            $('#video-home')[0].play();
         });
 
 

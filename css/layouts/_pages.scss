@@ -320,6 +320,20 @@
 //     }
 // }
 
+@media (max-width: 1250px) {
+    .ct-main-group {
+        .el-group {
+            .ct {
+                .item-1 {
+                    span {
+                        width: 98%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 986px) {
     .ct-main-group {
         .el-group {
