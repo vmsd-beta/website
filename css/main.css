@@ -201,12 +201,12 @@ img {
 }
 @media all and (min-width: 1450px) {
   .container {
-    max-width: 1400px;
+    max-width: 1300px;
   }
 }
 @media all and (min-width: 1600px) {
   .container {
-    max-width: 1500px;
+    max-width: 1400px;
   }
 }
 .pad-0 {
@@ -2078,7 +2078,7 @@ body {
   border-radius: 2rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 986px) {
   .ct-main-group .el-group .ct {
     margin-top: 4rem;
     margin-bottom: 4rem;
