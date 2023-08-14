@@ -81,16 +81,21 @@ body{
         font-weight: bold;
         width: 60%;
         padding: 0;
+        line-height: 117.4%;
     }
     p {
+        margin-top: 2.7rem;
         font-size: 1.6rem;
         width: 60%;
         padding: 0;
+        line-height: 196.9%;
     }
     &.content-banner-color{
         color: black;
     }
     .btn-view-work {
+        text-align: start !important;
+        padding-left: 5.2rem;
         background-color: hsla(0, 0, 0, 0) ;
         color: $c2;
         border: 1px solid $c2;
@@ -119,6 +124,9 @@ body{
     }
     .btn-about {
         text-align: end;
+        .btn {
+            font-size: 1.3rem !important;
+        }
     }
 }
 

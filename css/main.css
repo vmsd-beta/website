@@ -1021,7 +1021,7 @@ header.scroll {
   height: 4.9rem;
   border-radius: 10rem;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 600;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #FF6C0E), color-stop(50%, transparent));
   background-image: linear-gradient(90deg, #FF6C0E 50%, transparent 50%);
@@ -1067,8 +1067,8 @@ header.scroll {
 
 @media (max-width: 768px) {
   .btn-main {
-    width: 14rem;
-    height: 3.8rem;
+    width: 16rem;
+    height: 4.5rem;
     font-size: 1.2rem;
     line-height: 4.1rem;
   }
@@ -1148,7 +1148,7 @@ footer section .el .ct {
   margin-bottom: 2.6rem;
 }
 footer section .el .ct span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: block;
 }
 footer section .el .ct span p {
@@ -1345,16 +1345,21 @@ body {
   font-weight: bold;
   width: 60%;
   padding: 0;
+  line-height: 117.4%;
 }
 .content-banner p {
+  margin-top: 2.7rem;
   font-size: 1.6rem;
   width: 60%;
   padding: 0;
+  line-height: 196.9%;
 }
 .content-banner.content-banner-color {
   color: black;
 }
 .content-banner .btn-view-work {
+  text-align: start !important;
+  padding-left: 5.2rem;
   background-color: hsla(0, 0%, 0%, 0);
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -1380,6 +1385,9 @@ body {
 }
 .content-banner .btn-about {
   text-align: end;
+}
+.content-banner .btn-about .btn {
+  font-size: 1.3rem !important;
 }
 
 .main-content .ct-concert {
@@ -1839,6 +1847,7 @@ body {
   margin: 2.2rem 0 4.2rem 0;
   display: block;
   width: 90%;
+  line-height: 196.9%;
 }
 .ct-main-group .el-group .ct .item-2 .slider-for .img {
   display: block;
@@ -1928,7 +1937,7 @@ body {
   margin-top: 12.5rem;
 }
 .des h1 {
-  margin: 6.25rem 0;
+  margin: 5.6rem 0;
   text-align: center;
   font-size: 4.8rem;
   font-weight: bold;
@@ -1936,6 +1945,7 @@ body {
 .des p {
   font-size: 1.6rem;
   margin: 6.25rem auto;
+  line-height: 196.9%;
 }
 .des p span {
   color: #FF6C0E;
@@ -2047,7 +2057,7 @@ body {
 
 .ask {
   margin-bottom: 21.2rem;
-  margin-top: 25.6rem;
+  margin-top: 41rem;
 }
 .ask h1 {
   text-align: center;
@@ -2055,7 +2065,7 @@ body {
   font-weight: bold;
 }
 .ask .form {
-  margin: 3.6rem auto;
+  margin: 8.3rem auto;
   text-align: right;
 }
 .ask .form .el {
