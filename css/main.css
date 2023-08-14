@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Monterrat";
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Monterrat";
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
 }
@@ -574,7 +574,7 @@ img {
 
 html, body {
   font-size: 1.4rem;
-  font-family: "Monterrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   color: #2e2e2e;
   min-height: 100%;
@@ -1320,7 +1320,7 @@ body {
 }
 
 .home-banner-color {
-  margin-top: -0.6rem;
+  margin-top: -0.7rem;
   width: 101%;
   position: relative;
 }
@@ -1348,16 +1348,17 @@ body {
 .content-banner h1 {
   font-size: 4.8rem;
   font-weight: bold;
-  width: 60%;
+  width: 55%;
   padding: 0;
   line-height: 117.4%;
 }
 .content-banner p {
   margin-top: 2.7rem;
   font-size: 1.6rem;
-  width: 60%;
+  width: 54%;
   padding: 0;
   line-height: 196.9%;
+  font-weight: 500;
 }
 .content-banner.content-banner-color {
   color: black;
@@ -1389,6 +1390,7 @@ body {
   border: none;
 }
 .content-banner .btn-about {
+  margin-top: -5rem;
   text-align: end;
 }
 .content-banner .btn-about .btn {
@@ -1406,7 +1408,7 @@ body {
 .main-content .ct-concert h1 {
   font-weight: bold;
   font-size: 4.8rem;
-  width: 35%;
+  width: 30%;
 }
 .main-content .group-el .slick-center {
   height: 47.6rem !important;
@@ -1528,6 +1530,15 @@ body {
 }
 .ct-client .item:hover {
   cursor: pointer;
+}
+
+.cas-multi-client .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ct-product {
@@ -1686,14 +1697,43 @@ body {
   font-size: 4.5rem;
 }
 
+@media (max-width: 1420px) {
+  .content-banner-color .btn-about {
+    margin-top: 0rem;
+    margin-right: 10rem;
+  }
+}
+@media (max-width: 1300px) {
+  .content-banner h1 {
+    width: 100%;
+  }
+  .content-banner-color h1 {
+    width: auto;
+    padding: 0;
+  }
+  .content-banner-color p {
+    width: auto;
+    padding: 0;
+  }
+  .content-banner-color .btn-about {
+    margin-top: 0rem;
+  }
+  .main-content .ct-concert h1 {
+    width: 41%;
+  }
+}
 @media (max-width: 1024px) {
   .content-banner h1 {
+    font-size: 3.8rem;
     width: auto;
     padding: 0;
   }
   .content-banner p {
     width: auto;
     padding: 0;
+  }
+  .content-banner .btn-about {
+    margin-top: 0rem;
   }
   .ct-concert h1 {
     width: auto !important;
@@ -1826,7 +1866,7 @@ body {
   font-size: 1.6rem;
   margin: 2.2rem 0 4.2rem 0;
   display: block;
-  width: 72%;
+  width: 80%;
   line-height: 196.9%;
 }
 .ct-main-group .el-group .ct .item-2 {
@@ -1896,7 +1936,7 @@ body {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  padding-left: 10rem;
+  padding-left: 14.5rem;
 }
 .ct-main-group .el-group .ct:nth-child(even) .item-2 {
   -webkit-box-ordinal-group: 2;
