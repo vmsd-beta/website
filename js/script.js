@@ -243,41 +243,43 @@ jQuery(function($) {
 
             if ($('.cas-multi-concert').length) {
                 $('.cas-multi-concert').slick({
-                    slidesToShow: 7,
-                    slidesToScroll: 2,
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
                     dots: false,
                     arrows: false,
                     autoplay: true,
                     autoplaySpeed: 2500,
-                    swipeToSlide: true,
+                    swipeToSlide: false,
                     infinite: true,
-                    speed: 1000,
-                    responsive: [
-                        {
-                            breakpoint: 1599,
-                            settings: {
-                                slidesToShow: 7,
-                            }
-                        },
-                        {
-                            breakpoint: 1199,
-                            settings: {
-                                slidesToShow: 6,
-                            }
-                        },
-                        {
-                            breakpoint: 991,
-                            settings: {
-                                slidesToShow: 4,
-                            }
-                        },
-                        {
-                            breakpoint: 676,
-                            settings: {
-                                slidesToShow: 3,
-                            }
-                        }
-                    ],
+                    centerMode: true,
+                    speed: 1500,
+                    variableWidth: true,
+                    // responsive: [
+                    //     {
+                    //         breakpoint: 1599,
+                    //         settings: {
+                    //             slidesToShow: 6,
+                    //         }
+                    //     },
+                    //     {
+                    //         breakpoint: 1199,
+                    //         settings: {
+                    //             slidesToShow: 5,
+                    //         }
+                    //     },
+                    //     {
+                    //         breakpoint: 991,
+                    //         settings: {
+                    //             slidesToShow: 4,
+                    //         }
+                    //     },
+                    //     {
+                    //         breakpoint: 676,
+                    //         settings: {
+                    //             slidesToShow: 3,
+                    //         }
+                    //     }
+                    // ],
                 })
             }
 
@@ -315,46 +317,6 @@ jQuery(function($) {
                             breakpoint: 676,
                             settings: {
                                 slidesToShow: 2,
-                            }
-                        }
-                    ],
-                })
-            }
-
-            if ($('.cas-multi-concert').length) {
-                $('.cas-multi-concert').slick({
-                    slidesToShow: 7,
-                    slidesToScroll: 2,
-                    dots: false,
-                    arrows: false,
-                    autoplay: false,
-                    autoplaySpeed: 2500,
-                    swipeToSlide: false,
-                    infinite: flase,
-                    speed: 1000,
-                    responsive: [
-                        {
-                            breakpoint: 1599,
-                            settings: {
-                                slidesToShow: 7,
-                            }
-                        },
-                        {
-                            breakpoint: 1199,
-                            settings: {
-                                slidesToShow: 6,
-                            }
-                        },
-                        {
-                            breakpoint: 991,
-                            settings: {
-                                slidesToShow: 4,
-                            }
-                        },
-                        {
-                            breakpoint: 676,
-                            settings: {
-                                slidesToShow: 3,
                             }
                         }
                     ],

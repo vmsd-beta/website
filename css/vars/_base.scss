@@ -84,8 +84,8 @@ img{max-width: 100%;vertical-align: middle;object-fit: cover;}
 @import "var";
 // @include make-col(f20,20%);
 .container{
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 5.5rem;
+	padding-right: 5.5rem;
 }
 .container-home{
 	padding: 0 10rem;
@@ -99,14 +99,14 @@ img{max-width: 100%;vertical-align: middle;object-fit: cover;}
     	padding-left: 1.5rem;
 	}
 }
-@media all and (min-width: 1200px){
+@media all and (min-width: 1300px){
 	.container{
 		max-width: 1250px;
 	}
 }
 @media all and (min-width: 1450px){
 	.container{
-		max-width: 1380px;
+		max-width: 1400px;
 	}
 }
 @media all and (min-width: 1600px){

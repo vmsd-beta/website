@@ -45,11 +45,12 @@
                     font-size: 1.6rem;
                     margin: 2.2rem 0 4.2rem 0;
                     display: block;
-                    width: 90%;
+                    width: 72%;
                     line-height: 196.9%;
                 }
             }
             .item-2{
+                padding: 0 !important;
                 .slider-for {
                     .img {
                         display: block;
@@ -307,6 +308,7 @@
                         -webkit-line-clamp: 7;
                         -webkit-box-orient: vertical;
                         margin: 0 !important;
+                        width: 98%;
                     }
                     .btn-start-project {
                          text-align: end;
