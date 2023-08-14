@@ -12,6 +12,23 @@
                     }
                 }
             }
+            .item-2{
+                .slider-for {
+                    .img {
+                        display: block;
+                        position: relative;
+                        padding-top: 29% !important;
+                        width: 100%;
+                        img {
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
         }
         .ct {
             margin: 11rem 0;
