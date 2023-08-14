@@ -1808,6 +1808,19 @@ body {
 .ct-main-group .el-group .trade-show .el .slick-track .slick-slide {
   width: 100% !important;
 }
+.ct-main-group .el-group .trade-show .item-2 .slider-for .img {
+  display: block;
+  position: relative;
+  padding-top: 29% !important;
+  width: 100%;
+}
+.ct-main-group .el-group .trade-show .item-2 .slider-for .img img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 .ct-main-group .el-group .ct {
   margin: 11rem 0;
   display: -webkit-box;
