@@ -1027,7 +1027,9 @@ header.scroll {
   color: #FF6C0E;
   font-size: 3rem;
 }
-
+.btn-main a {
+  padding: 8% 12% !important;
+}
 .btn-main {
   cursor: pointer;
   width: 18rem;
