@@ -97,7 +97,8 @@ header {
 				width: 50%;
 				box-sizing: border-box;
 				font-size: 1.6rem;
-				display: inline-block;
+				display: flex;
+				align-items: center;
 				a {
 					&:hover {
 						border-bottom: 1px solid $c2;
