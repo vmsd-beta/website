@@ -1045,9 +1045,9 @@ header.scroll {
   transition: background 500ms ease-in-out;
   -webkit-transition: background 500ms ease-in-out;
   transition: background 500ms ease-in-out;
-  a {
-    padding: 8% 30%;
-  }
+}
+.btn-main a {
+  padding: 8% 12% !important;
 }
 .btn-main:hover {
   background-position: 100%;
@@ -1712,6 +1712,9 @@ video {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+}
+.learn-more.learn-more-gtr .ct {
+  width: 66rem !important;
 }
 .learn-more .ct {
   width: 58.9rem;

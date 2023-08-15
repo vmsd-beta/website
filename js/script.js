@@ -680,4 +680,17 @@ jQuery(function ($) {
         
         });
     });
+
+    $(document).ready(function() {
+        $('#view-work').click(function() {
+            const targetOffset = $('#ct-concert').offset().top;
+            const windowHeight = $(window).height();
+            const scrollToPosition = targetOffset - (windowHeight / 4);
+        
+            $('html, body').animate({
+              scrollTop: scrollToPosition
+            }, 1000);
+        
+        });
+    });
 })

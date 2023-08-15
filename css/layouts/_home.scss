@@ -409,6 +409,11 @@ video {
     justify-content: center;
     align-items: center;
     color: white;
+    &.learn-more-gtr {
+        .ct {
+            width: 66rem !important;
+        }
+    }
     .ct {
         width: 58.9rem;
         padding: 10rem 0;
