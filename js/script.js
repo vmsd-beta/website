@@ -693,4 +693,46 @@ jQuery(function ($) {
         
         });
     });
+
+    $(document).ready(function() {
+        const $box = $('.btn-drop');
+
+
+        function showHeader() {
+                $('.btn-let-chat').show();
+                $('.logo').show();
+        }
+
+        function hideHeader() {
+            $('.btn-let-chat').hide();
+            $('.logo').hide();
+        }
+  
+        // Hover
+        $box.on('mouseenter', function() {
+            hideHeader();
+        });
+  
+        $box.on('mouseleave', function() {
+            showHeader();
+        });
+  
+        // Focus
+        $('#navbarSupportedContent').on('mouseenter', function() {
+            hideHeader();
+        });
+  
+        $('#navbarSupportedContent').on('mouseleave', function() {
+            showHeader();
+        });
+        const scrollMessage = $('.home-banner');
+  
+        $(window).on('scroll', function() {
+          if ($(this).scrollTop() > 0) {
+            hideHeader();
+          } else {
+            showHeader();
+          }
+        });
+      });
 })
