@@ -592,6 +592,9 @@ body{
 
 
 @media (max-width: 1300px) {
+    .col-lg-8 {
+        max-width: 80%;
+    }
     .content-banner h1 {
         width: 100%;
     }
@@ -614,6 +617,9 @@ body{
 }
 
 @media (max-width: 1024px) {
+    .col-lg-8 {
+        max-width: 90%;
+    }
     .content-banner {
         h1 {
             font-size: 3.8rem;
