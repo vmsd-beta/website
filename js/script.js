@@ -638,5 +638,28 @@ jQuery(function($) {
             }
         });
 
+        // $(document).ready(function(){
+        //     $(".our-work").mouseenter(function(){
+        //       $(".el-page").addClass('on-our-work');
+        //       $(".our-work").addClass('active');
+        //     });
+
+        //     $(".our-team").mouseenter(function(){
+        //         $(".el-page").removeClass('on-our-work');
+        //         $(".our-work").removeClass('active');
+        //       });
+
+        //     $(".contact-us").mouseenter(function(){
+        //         $(".el-page").removeClass('on-our-work');
+        //           $(".our-work").removeClass('active');
+        //     });
+
+        //     $(".el-page").mouseleave(function(){
+        //         $(".el-page").removeClass('on-our-work');
+        //           $(".our-work").removeClass('active');
+
+        //     });
+        //   });
+
 
 })

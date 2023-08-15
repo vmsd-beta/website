@@ -60,6 +60,15 @@ header {
 	background-color: rgba(0,0,0,0.6);
 	top: 100%;
 	left: 0;
+	.on-our-work {
+		display: flex !important;
+		transition: ease-in-out 2s !important;
+	}
+	// .our-work:hover ~ .el.el-page {
+	// 	background-color: red !important;
+	// 	display: flex !important
+	// }
+
 	.el-group {
 		padding: 4.506666666% 0;
 		margin: 0 auto;
@@ -78,6 +87,9 @@ header {
 				}
 			}
 		}
+		// .active {
+		// 	color: $c3 !important;
+		// }
 		.el-page {
 			display: flex;
 			flex-wrap: wrap;

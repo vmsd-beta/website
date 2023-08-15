@@ -920,6 +920,13 @@ header.scroll {
   top: 100%;
   left: 0;
 }
+.menu-ct .on-our-work {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-transition: ease-in-out 2s !important;
+  transition: ease-in-out 2s !important;
+}
 .menu-ct .el-group {
   padding: 4.506666666% 0;
   margin: 0 auto;
