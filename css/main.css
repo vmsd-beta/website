@@ -1046,9 +1046,6 @@ header.scroll {
   -webkit-transition: background 500ms ease-in-out;
   transition: background 500ms ease-in-out;
 }
-.btn-main a {
-  padding: 8% 12% !important;
-}
 .btn-main:hover {
   background-position: 100%;
   background-color: #FF6C0E;
@@ -1144,9 +1141,8 @@ footer section .el .ct-group {
           justify-content: space-between;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 7.5rem 1fr;
+  -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 7.5rem;
 }
 footer section .el h1 {
   white-space: nowrap;
@@ -1170,6 +1166,7 @@ footer section .el .ct {
 footer section .el .ct span {
   font-size: 1rem;
   display: block;
+  white-space: nowrap;
 }
 footer section .el .ct span p {
   font-weight: bold;

@@ -16,7 +16,6 @@ footer {
                 justify-content: space-between;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 7.5rem; 
             }
             h1 {
                 white-space: nowrap;
@@ -39,6 +38,7 @@ footer {
                 span {
                     font-size: 1rem;
                     display: block;
+                    white-space: nowrap;
                     p {
                         font-weight: bold;
                     }
