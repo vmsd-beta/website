@@ -1,14 +1,14 @@
-(function() {
+(function () {
     var $;
     $ = this.jQuery || window.jQuery;
     win = $(window), body = $('body'), doc = $(document);
 
-    $.fn.hc_accordion = function() {
+    $.fn.hc_accordion = function () {
         var acd = $(this);
-        acd.find('ul>li').each(function(index, el) {
+        acd.find('ul>li').each(function (index, el) {
             if ($(el).find('ul li').length > 0) $(el).prepend('<button type="button" class="acd-drop"></button>');
         });
-        acd.on('click', '.acd-drop', function(e) {
+        acd.on('click', '.acd-drop', function (e) {
             e.preventDefault();
             var ul = $(this).nextAll("ul");
             if (ul.is(":hidden") === true) {
@@ -62,15 +62,15 @@
         m_nav.hc_accordion();
     }
 
-    $.fn.hc_countdown = function(options) {
+    $.fn.hc_countdown = function (options) {
         var settings = $.extend({
-                date: new Date().getTime() + 1000 * 60 * 60 * 24,
-            }, options),
+            date: new Date().getTime() + 1000 * 60 * 60 * 24,
+        }, options),
             this_ = $(this);
 
         var countDownDate = new Date(settings.date).getTime();
 
-        var count = setInterval(function() {
+        var count = setInterval(function () {
             var now = new Date().getTime();
             var distance = countDownDate - now;
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -88,17 +88,17 @@
         }, 1000);
     }
 
-    $.fn.hc_upload = function(options) {
+    $.fn.hc_upload = function (options) {
         var settings = $.extend({
-                multiple: false,
-                result: '.hc-upload-pane',
-            }, options),
+            multiple: false,
+            result: '.hc-upload-pane',
+        }, options),
             this_ = $(this);
 
         var input_name = this_.attr('name');
         this_.removeAttr('name');
 
-        this_.change(function(e) {
+        this_.change(function (e) {
             if ($(settings.result).length > 0) {
                 var files = event.target.files;
                 if (settings.multiple) {
@@ -128,7 +128,7 @@
             }
         });
 
-        body.on('click', '.hc-upload .hc-del', function(e) {
+        body.on('click', '.hc-upload .hc-del', function (e) {
             e.preventDefault();
             this_.val('');
             $(this).closest('.hc-upload').remove();
@@ -138,26 +138,26 @@
 }).call(this);
 
 
-jQuery(function($) {
+jQuery(function ($) {
     var win = $(window),
         body = $('body'),
         doc = $(document);
 
     var FU = {
-        get_Ytid: function(url) {
+        get_Ytid: function (url) {
             var rx = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
             if (url) var arr = url.match(rx);
             if (arr) return arr[1];
         },
-        get_currency: function(str) {
+        get_currency: function (str) {
             if (str) return str.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
         },
-        animate: function(elems) {
+        animate: function (elems) {
             var animEndEv = 'webkitAnimationEnd animationend';
-            elems.each(function() {
+            elems.each(function () {
                 var $this = $(this),
                     $animationType = $this.data('animation');
-                $this.addClass($animationType).one(animEndEv, function() {
+                $this.addClass($animationType).one(animEndEv, function () {
                     $this.removeClass($animationType);
                 });
             });
@@ -165,27 +165,27 @@ jQuery(function($) {
     };
 
     var UI = {
-        mMenu: function() {
+        mMenu: function () {
 
         },
-        header: function() {
+        header: function () {
             var elm = $('header'),
                 h = elm.innerHeight(),
                 offset = 200,
                 mOffset = 0;
-            var fixed = function() {
+            var fixed = function () {
                 elm.addClass('fixed');
                 body.css('margin-top', h);
             }
-            var unfixed = function() {
+            var unfixed = function () {
                 elm.removeClass('fixed');
                 body.css('margin-top', '');
             }
-            var Mfixed = function() {
+            var Mfixed = function () {
                 elm.addClass('m-fixed');
                 body.css('margin-top', h);
             }
-            var unMfixed = function() {
+            var unMfixed = function () {
                 elm.removeClass('m-fixed');
                 body.css('margin-top', '');
             }
@@ -194,7 +194,7 @@ jQuery(function($) {
             } else {
                 win.scrollTop() > mOffset ? Mfixed() : unMfixed();
             }
-            win.scroll(function(e) {
+            win.scroll(function (e) {
                 if (win.width() > 991) {
                     win.scrollTop() > offset ? fixed() : unfixed();
                 } else {
@@ -202,11 +202,11 @@ jQuery(function($) {
                 }
             });
         },
-        backTop: function() {
+        backTop: function () {
             var back_top = $('.back-to-top'),
                 offset = 800;
 
-            back_top.click(function() {
+            back_top.click(function () {
                 $("html, body").animate({ scrollTop: 0 }, 800);
                 return false;
             });
@@ -215,12 +215,12 @@ jQuery(function($) {
                 back_top.fadeIn(200);
             }
 
-            win.scroll(function() {
+            win.scroll(function () {
                 if (win.scrollTop() > offset) back_top.fadeIn(200);
                 else back_top.fadeOut(200);
             });
         },
-        slider: function() {
+        slider: function () {
             $('.cas-home').slick({
                 autoplay: true,
                 speed: 2000,
@@ -251,7 +251,7 @@ jQuery(function($) {
                     autoplaySpeed: 2500,
                     swipeToSlide: false,
                     infinite: true,
-                    centerMode: true,
+                    // centerMode: true,
                     speed: 1500,
                     variableWidth: true,
                     // responsive: [
@@ -289,7 +289,7 @@ jQuery(function($) {
                     slidesToScroll: 1,
                     dots: false,
                     arrows: false,
-                    autoplay: false,
+                    autoplay: true,
                     autoplaySpeed: 2500,
                     swipeToSlide: true,
                     infinite: true,
@@ -327,18 +327,20 @@ jQuery(function($) {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
+                autoplay: true,
                 fade: true,
                 asNavFor: '.slider-nav'
-              });
-              $('.slider-nav').slick({
+            });
+            $('.slider-nav').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
+                autoplay: true,
                 asNavFor: '.slider-for',
                 dots: true,
                 focusOnSelect: true,
                 nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
                 prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
-              });
+            });
 
             // $('.cas-home').owlCarousel({
             //     items: 1,
@@ -382,22 +384,22 @@ jQuery(function($) {
             //     }
             // });
         },
-        input_number: function() {
-            doc.on('keydown', '.numberic', function(event) {
+        input_number: function () {
+            doc.on('keydown', '.numberic', function (event) {
                 if (!(!event.shiftKey &&
-                        !(event.keyCode < 48 || event.keyCode > 57) ||
-                        !(event.keyCode < 96 || event.keyCode > 105) ||
-                        event.keyCode == 46 ||
-                        event.keyCode == 8 ||
-                        event.keyCode == 190 ||
-                        event.keyCode == 9 ||
-                        event.keyCode == 116 ||
-                        (event.keyCode >= 35 && event.keyCode <= 39)
-                    )) {
+                    !(event.keyCode < 48 || event.keyCode > 57) ||
+                    !(event.keyCode < 96 || event.keyCode > 105) ||
+                    event.keyCode == 46 ||
+                    event.keyCode == 8 ||
+                    event.keyCode == 190 ||
+                    event.keyCode == 9 ||
+                    event.keyCode == 116 ||
+                    (event.keyCode >= 35 && event.keyCode <= 39)
+                )) {
                     event.preventDefault();
                 }
             });
-            doc.on('click', '.i-number .up', function(e) {
+            doc.on('click', '.i-number .up', function (e) {
                 e.preventDefault();
                 var input = $(this).parents('.i-number').children('input');
                 var max = Number(input.attr('max')),
@@ -412,7 +414,7 @@ jQuery(function($) {
                     input.trigger('number.up');
                 }
             });
-            doc.on('click', '.i-number .down', function(e) {
+            doc.on('click', '.i-number .down', function (e) {
                 e.preventDefault();
                 var input = $(this).parents('.i-number').children('input');
                 var min = Number(input.attr('min')),
@@ -428,26 +430,26 @@ jQuery(function($) {
                 }
             });
         },
-        yt_play: function() {
-            doc.on('click', '.yt-box .play', function(e) {
+        yt_play: function () {
+            doc.on('click', '.yt-box .play', function (e) {
                 var id = FU.get_Ytid($(this).closest('.yt-box').attr('data-url'));
                 $(this).closest('.yt-box iframe').remove();
                 $(this).closest('.yt-box').append('<iframe src="https://www.youtube.com/embed/' + id + '?rel=0&amp;autoplay=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
             });
         },
-        psy: function() {
+        psy: function () {
             var btn = '.psy-btn',
                 sec = $('.psy-section'),
                 pane = '.psy-pane';
-            doc.on('click', btn, function(e) {
+            doc.on('click', btn, function (e) {
                 e.preventDefault();
                 $(this).closest(pane).find(btn).removeClass('active');
                 $(this).addClass('active');
                 $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top - 40 }, 600);
             });
 
-            var section_act = function() {
-                sec.each(function(index, el) {
+            var section_act = function () {
+                sec.each(function (index, el) {
                     if (win.scrollTop() + (win.height() / 2) >= $(el).offset().top) {
                         var id = $(el).attr('id');
                         $(pane).find(btn).removeClass('active');
@@ -456,21 +458,21 @@ jQuery(function($) {
                 });
             }
             section_act();
-            win.scroll(function() {
+            win.scroll(function () {
                 section_act();
             });
         },
-        toggle: function() {
+        toggle: function () {
             var ani = 100;
-            $('[data-show]').each(function(index, el) {
+            $('[data-show]').each(function (index, el) {
                 var ct = $($(el).attr('data-show'));
-                $(el).click(function(e) {
+                $(el).click(function (e) {
                     e.preventDefault();
                     ct.fadeToggle(ani);
                 });
             });
-            win.click(function(e) {
-                $('[data-show]').each(function(index, el) {
+            win.click(function (e) {
+                $('[data-show]').each(function (index, el) {
                     var ct = $($(el).attr('data-show'));
                     if (ct.has(e.target).length == 0 && !ct.is(e.target) && $(el).has(e.target).length == 0 && !$(el).is(e.target)) {
                         ct.fadeOut(ani);
@@ -478,12 +480,12 @@ jQuery(function($) {
                 });
             });
         },
-        uiCounterup: function() {
+        uiCounterup: function () {
             var item = $('.hc-couter'),
                 flag = true;
             if (item.length > 0) {
                 run(item);
-                win.scroll(function() {
+                win.scroll(function () {
                     if (flag == true) {
                         run(item);
                     }
@@ -497,14 +499,14 @@ jQuery(function($) {
                 }
 
                 function count(item) {
-                    item.each(function() {
+                    item.each(function () {
                         var this_ = $(this);
                         var num = Number(this_.text().replace(".", ""));
                         var incre = num / 80;
 
                         function start(counter) {
                             if (counter <= num) {
-                                setTimeout(function() {
+                                setTimeout(function () {
                                     this_.text(FU.get_currency(Math.ceil(counter)));
                                     counter = counter + incre;
                                     start(counter);
@@ -544,7 +546,7 @@ jQuery(function($) {
                 })
             });
         },
-        scrollHori: function(element) {
+        scrollHori: function (element) {
             const slider = document.querySelector(element);
             console.log(slider);
             let isDown = false;
@@ -574,7 +576,7 @@ jQuery(function($) {
                 //console.log(walk);
             });
         },
-        ready: function() {
+        ready: function () {
             //UI.mMenu();
             //UI.header();
             UI.slider();
@@ -596,7 +598,7 @@ jQuery(function($) {
 
 
     /*custom here*/
-    WOW.prototype.addBox = function(element) {
+    WOW.prototype.addBox = function (element) {
         this.boxes.push(element);
     };
 
@@ -605,7 +607,7 @@ jQuery(function($) {
     });
     wow.init();
     if ($(window).width() > 1199) {
-        $('.wow').on('scrollSpy:exit', function() {
+        $('.wow').on('scrollSpy:exit', function () {
             $(this).css({
                 'visibility': 'hidden',
                 'animation-name': 'none'
@@ -617,52 +619,65 @@ jQuery(function($) {
         open: '.open-mnav',
     })
 
-    $(document).ready(function() {
-    // Ẩn tất cả các .el-group mặc định
+    $(document).ready(function () {
+        // Ẩn tất cả các .el-group mặc định
         if (window.innerWidth <= 768) {
             $('footer .el-group').hide();
-                $('.el > h1').click(function() {
-                    var elGroup = $(this).next('.el-group');
-                    
-                    if (elGroup.hasClass('active')) {
-                        elGroup.slideUp();
-                        elGroup.removeClass('active');
-                    } else {
-                        $('.el-group').removeClass('active');
-                        elGroup.slideDown();
-                        elGroup.addClass('active');
-                    }
-                });
-            } else {
-                $('footer .el-group').show();
-            }
+            $('.el > h1').click(function () {
+                var elGroup = $(this).next('.el-group');
+
+                if (elGroup.hasClass('active')) {
+                    elGroup.slideUp();
+                    elGroup.removeClass('active');
+                } else {
+                    $('.el-group').removeClass('active');
+                    elGroup.slideDown();
+                    elGroup.addClass('active');
+                }
+            });
+        } else {
+            $('footer .el-group').show();
+        }
+    });
+
+    $(document).ready(function () {
+        $(".our-work").mouseenter(function () {
+            $(".el-page").addClass('on-our-work');
+            $(".our-work").addClass('active');
         });
 
-        $(document).ready(function(){
-            $(".our-work").mouseenter(function(){
-              $(".el-page").addClass('on-our-work');
-              $(".our-work").addClass('active'); 
-            });
+        $(".btn-drop").mouseenter(function () {
+            $(".el-page").removeClass('on-our-work');
+            $(".our-work").removeClass('active');
+        });
 
-            $(".btn-drop").mouseenter(function(){
-                $(".el-page").removeClass('on-our-work');
-                $(".our-work").removeClass('active');
-            });
+        $(".our-team").mouseenter(function () {
+            $(".el-page").removeClass('on-our-work');
+            $(".our-work").removeClass('active');
+        });
 
-            $(".our-team").mouseenter(function(){
-                $(".el-page").removeClass('on-our-work');
-                $(".our-work").removeClass('active');
-              });
+        $(".contact-us").mouseenter(function () {
+            $(".el-page").removeClass('on-our-work');
+            $(".our-work").removeClass('active');
+        });
 
-            $(".contact-us").mouseenter(function(){
-                $(".el-page").removeClass('on-our-work');
-                  $(".our-work").removeClass('active');
-            });
+        $(".el-page").mouseleave(function () {
+            $(".el-page").removeClass('on-our-work');
+            $(".our-work").removeClass('active');
 
-            $(".el-page").mouseleave(function(){
-                $(".el-page").removeClass('on-our-work');
-                  $(".our-work").removeClass('active');
+        });
+    });
 
-            });
-          });
+    $(document).ready(function() {
+        $('#service').click(function() {
+            const targetOffset = $('#ct-concert').offset().top;
+            const windowHeight = $(window).height();
+            const scrollToPosition = targetOffset - (windowHeight / 4);
+        
+            $('html, body').animate({
+              scrollTop: scrollToPosition
+            }, 1000);
+        
+        });
+    });
 })

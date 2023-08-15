@@ -45,7 +45,7 @@
                                     <ul class="el el-category col-lg-4">
                                         <li class="our-work"> <a href="javascript:;">Our work</a> </li>
                                         <li class="our-team"> <a href="about.html">Our team </a> </li>
-                                        <li class="contact-us"> <a href="javascript:;">Contact us</a> </li>
+                                        <li class="contact-us"> <a href="about.html#ask">Contact us</a> </li>
                                     </ul>
                                     <ul class="el el-page col-lg-8">
                                         <li><a href="brand-communication.html">  Brand Communication </a></li>
@@ -71,8 +71,8 @@
 
         <body>
             <section class="home-banner">
-                <video autoplay loop id="video-home" width="100%" height="100%">
-                    <source src="./videos/video-home.mp4" type="video/mp4">
+                <video preload="auto" autoplay loop id="video-home" width="100%" height="100px">
+                    <source src="./videos/video-home.mp4" type="video/mp4" height="100px">
                 </video>
                 <!-- <a class="img-index" href="javascript:;">         -->
                 <!-- </a> -->
@@ -95,13 +95,13 @@
                         expertise to do it all. We bring your dreams to life, no matter how big. </p>
                     <div class="btn-about wow fadeInRight delay07">
                         <button class="btn btn-main">
-                            ABOUT
+                            <a href="about.html">ABOUT</a>
                         </button>
                     </div>
                 </div>
             </section>
             <section class="main-content">
-                <div class="container container-home ct-concert">
+                <div class="container container-home ct-concert" id="ct-concert">
                     <span>SERVICES</span>
                     <h1>From concept to reality</h1>
                 </div>
@@ -240,24 +240,24 @@
                 <div class="ct-more">
                     <a class="img" href="javascript:;"><img src="./images/banner_color.jpg" alt=""></a>
                     <div class="ct">
-                        <div class="item">
+                        <a class="item" id="service">
                             <div class="el">
                                 <span>Services</span>
                                 <button> <i class="fal fa-long-arrow-right"></i></i></button>
                             </div>
-                        </div>
-                        <div class="item">
+                        </a>
+                        <a class="item" href="about.html">
                             <div class="el">
                                 <span>About</span>
                                 <button> <i class="fal fa-long-arrow-right"></i></i></button>
                             </div>
-                        </div>
-                        <div class="item">
+                        </a>
+                        <a class="item" href="about.html#ask" id="contact">
                             <div class="el">
                                 <span>Contact</span>
                                 <button> <i class="fal fa-long-arrow-right"></i></i></button>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
