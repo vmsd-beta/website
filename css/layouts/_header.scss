@@ -87,11 +87,11 @@ header {
 				}
 			}
 		}
-		// .active {
-		// 	color: $c3 !important;
-		// }
+		.active {
+			color: $c3 !important;
+		}
 		.el-page {
-			display: flex;
+			display: none;
 			flex-wrap: wrap;
 			li {
 				width: 50%;

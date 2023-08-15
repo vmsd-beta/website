@@ -952,10 +952,11 @@ header.scroll {
   color: #FF6C0E;
   cursor: pointer;
 }
+.menu-ct .el-group .active {
+  color: #FF6C0E !important;
+}
 .menu-ct .el-group .el-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
