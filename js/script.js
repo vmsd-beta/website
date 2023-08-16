@@ -323,6 +323,27 @@ jQuery(function ($) {
                 })
             }
 
+            $('.slider-for-pop-up').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                fade: true,
+                asNavFor: '.slider-nav-pop-up'
+            });
+
+            
+            $('.slider-nav-pop-up').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                asNavFor: '.slider-for-pop-up',
+                dots: true,
+                focusOnSelect: true,
+                nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
+                prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
+            });
+
             $('.slider-for-expo').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,

@@ -1922,6 +1922,9 @@ video {
     width: 90%;
   }
 }
+.ct-main-group .el-group .ct-expo .item-1 {
+  margin-bottom: 20%;
+}
 .ct-main-group .el-group .ct-expo .item-2 .slider-for .img {
   display: block;
   position: relative;
@@ -1934,6 +1937,9 @@ video {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+.ct-main-group .el-group .ct-pop-up .item-1 {
+  margin-bottom: 20%;
 }
 .ct-main-group .el-group .trade-show .el {
   width: 100% !important;
@@ -1949,6 +1955,9 @@ video {
 }
 .ct-main-group .el-group .trade-show .el .slick-track .slick-slide {
   width: 100% !important;
+}
+.ct-main-group .el-group .trade-show .item-1 {
+  margin-bottom: 20%;
 }
 .ct-main-group .el-group .trade-show .item-2 .slider-for .img {
   display: block;
@@ -1989,7 +1998,7 @@ video {
 .ct-main-group .el-group .ct .item-2 .slider-for .img {
   display: block;
   position: relative;
-  padding-top: 20.857142857%;
+  padding-top: 28.857143%;
   width: 100%;
 }
 .ct-main-group .el-group .ct .item-2 .slider-for .img img {

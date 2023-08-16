@@ -1,6 +1,9 @@
 .ct-main-group {
     .el-group {
         .ct-expo {
+            .item-1 {
+                margin-bottom: 20%;
+            }
             .item-2{
                 .slider-for {
                     .img {
@@ -19,6 +22,11 @@
                 }
             }
         }
+        .ct-pop-up {
+            .item-1 {
+                margin-bottom: 20%;
+            }
+        }
         .trade-show {
             .el {
                 width: 100% !important;
@@ -30,6 +38,9 @@
                         width: 100% !important;
                     }
                 }
+            }
+            .item-1 {
+                margin-bottom: 20%;
             }
             .item-2{
                 .slider-for {
@@ -74,7 +85,7 @@
                     .img {
                         display: block;
                         position: relative;
-                        padding-top: 20.857142857%;
+                        padding-top: 28.857143%;
                         width: 100%;
                         img {
                             top: 0;
