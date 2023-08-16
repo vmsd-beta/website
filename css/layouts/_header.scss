@@ -215,16 +215,17 @@ header {
 
 @media (max-width: 768px) {
 	.btn-main {
-		width: 16rem;
-		height: 4.5rem;
+		width: 14rem;
+		height: 4.2rem;
 		font-size: 1.2rem;
-		line-height: 4.1rem;
 	}
 	.menu-ct {
 		background-color: rgba(0, 0, 0, 0.9);
 		.el-group {
 			.el-category {
-				font-size: 3rem;
+				li {
+					font-size: 3rem !important;
+				}
 			}
 			.el-page {
 				li {
