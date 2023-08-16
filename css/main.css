@@ -930,6 +930,9 @@ header.scroll {
   -webkit-transition: ease-in-out 2s !important;
   transition: ease-in-out 2s !important;
 }
+.menu-ct .on-our-work li {
+  white-space: nowrap;
+}
 .menu-ct .el-group {
   padding: 4.506666666% 0;
   margin: 0 auto;
@@ -1913,6 +1916,9 @@ video {
   h1 {
     font-size: 3rem !important;
   }
+  .content-banner h1 {
+    width: 100% !important;
+  }
   .menu-ct .el-category {
     width: 100%;
   }
@@ -1975,6 +1981,8 @@ video {
   }
   .main-content .group-el .item .ct h1 {
     font-size: 1.8rem !important;
+    width: 6rem;
+    margin-top: -3rem;
   }
   .main-content .group-el .item .ct img {
     width: 8rem !important;
@@ -2006,6 +2014,7 @@ video {
     width: 100%;
   }
   .main-content .group-el:hover .item:not(:hover) .ct {
+    display: none !important;
     top: 90%;
     left: 50%;
   }
@@ -2397,13 +2406,8 @@ video {
     padding-left: 0rem !important;
   }
   .ct-main-group .el-group .ct .item-1 span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
-    margin: 0 !important;
-    width: 98%;
+    width: 100%;
+    margin: 0;
   }
   .ct-main-group .el-group .ct .item-1 .btn-start-project {
     text-align: end;

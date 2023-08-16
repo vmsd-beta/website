@@ -628,6 +628,9 @@ video {
     h1 {
         font-size: 3rem !important;
     }
+    .content-banner h1 {
+        width: 100% !important;
+    }
     .menu-ct {
         .el-category {
             width: 100%;
@@ -705,6 +708,8 @@ video {
                 .ct {
                     h1 {
                         font-size: 1.8rem !important;
+                        width: 6rem;
+                        margin-top: -3rem;
                     }
                     img {
                         width: 8rem !important;
@@ -737,6 +742,7 @@ video {
                     }
                 }
                 .ct {
+                    display: none !important;
                     top: 90%;
                     left: 50%;
                     .fix-padding {

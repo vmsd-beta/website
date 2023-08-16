@@ -66,6 +66,9 @@ header {
 	.on-our-work {
 		display: flex !important;
 		transition: ease-in-out 2s !important;
+		li {
+			white-space: nowrap;
+		}
 	}
 	// .our-work:hover ~ .el.el-page {
 	// 	background-color: red !important;
