@@ -1432,24 +1432,23 @@ video {
 .main-content .slick-list .slick-slide {
   margin: 0 1rem !important;
 }
-.main-content .group-el .cas-multi-concert {
+.main-content .group-el {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: scroll;
-}
-.main-content .group-el .cas-multi-concert .slide {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 100%;
-  margin-right: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .main-content .group-el .item {
   position: relative;
   height: 47.6rem !important;
+  width: 21.5rem !important;
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
+}
+.main-content .group-el .item:nth-child(n+2) {
+  margin-left: 1rem;
 }
 .main-content .group-el .item:before {
   content: "";
@@ -1557,6 +1556,43 @@ video {
   height: 47.6rem !important;
   -webkit-transition: ease-in-out 2s;
   transition: ease-in-out 2s;
+}
+.main-content .group-el:hover .item:not(:hover) .ct {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  text-align: center;
+  z-index: 2;
+}
+.main-content .group-el:hover .item:not(:hover) .ct .fix-padding {
+  margin-left: -1rem;
+}
+.main-content .group-el:hover .item:not(:hover) .ct h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  white-space: nowrap;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #ffffff;
+  width: 15rem;
+  margin-top: -6rem;
+  margin-left: 6rem;
+}
+.main-content .group-el:hover .item:not(:hover) .ct img {
+  display: initial;
+  width: 8rem !important;
+}
+.main-content .group-el:hover .item:not(:hover) .ct button {
+  display: none;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  font-size: 1.6rem;
 }
 
 .ct-client .title {

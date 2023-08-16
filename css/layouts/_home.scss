@@ -158,20 +158,16 @@ video {
     }
    
     .group-el {
-        .cas-multi-concert {
-            display: flex;
-            overflow-x: scroll;
-          }
-          .cas-multi-concert .slide {
-            flex: 0 0 auto;
-            width: 100%; // Đảm bảo hiển thị một phần tử trên mỗi slide
-            margin-right: 10px; // Để tạo khoảng cách giữa các slide
-          }
+        display: flex;
+        justify-content: space-between;
         .item {
             position: relative;
             height: 47.6rem !important;
-            // width: 25.5rem !important;
+            width: 21.5rem !important;
             transition: ease-in-out 1s;
+            &:nth-child(n + 2) {
+                margin-left: 1rem;
+            }
             &:before {
                 content: "";
                 position: absolute;
@@ -272,6 +268,39 @@ video {
             width: 16rem !important;
             height: 47.6rem !important;
             transition: ease-in-out 2s;
+            .ct {
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: 1s ease-in-out;
+                text-align: center;
+                z-index: 2;
+                .fix-padding {
+                    margin-left: -1rem;
+                }
+                h1 {
+                    font-weight: bold;
+                    font-size: 2rem;
+                    white-space: nowrap;
+                    transform-origin: top left;
+                    transform: rotate(-90deg);
+                    color: $c2;
+                    width: 15rem;
+                    margin-top: -6rem;
+                    margin-left: 6rem;
+                }
+                img {
+                    display: initial;
+                    width: 8rem !important;
+                }
+                button {
+                    display: none;
+                    color: $c2;
+                    border-bottom: 1px solid $c2;
+                    font-size: 1.6rem;
+                }
+            }
         }
     }
 }
