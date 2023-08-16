@@ -1988,11 +1988,11 @@ video {
     width: 8rem !important;
   }
   .main-content .group-el .item:hover {
-    width: 40.3rem !important;
+    width: 60.3rem !important;
   }
   .main-content .group-el .item:hover > .img {
-    width: 40.3rem !important;
-    height: 30rem;
+    width: 60.3rem !important;
+    height: 30rem !important;
   }
   .main-content .group-el .item:hover > .img img {
     height: 30rem;
@@ -2000,7 +2000,7 @@ video {
   }
   .main-content .group-el .item:hover .ct {
     top: 80%;
-    left: 40%;
+    left: 30%;
   }
   .main-content .group-el:hover .item:not(:hover) {
     width: 16rem !important;

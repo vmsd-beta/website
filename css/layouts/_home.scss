@@ -716,10 +716,10 @@ video {
                     }
                 }
                 &:hover {
-                    width: 40.3rem !important;
+                    width: 60.3rem !important;
                     > .img {
-                        width: 40.3rem !important;
-                        height: 30rem;
+                        width: 60.3rem !important;
+                        height: 30rem !important;
                         img {
                             height: 30rem;
                             width: 100%;
@@ -727,7 +727,7 @@ video {
                     }
                     .ct {
                         top: 80%;
-                        left: 40%;
+                        left: 30%;
                     }
                 }
             }
