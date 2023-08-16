@@ -1487,7 +1487,7 @@ video {
   z-index: 2;
 }
 .main-content .group-el .item .ct .fix-padding {
-  margin-left: -2rem;
+  margin-left: -1rem;
 }
 .main-content .group-el .item .ct h1 {
   font-weight: bold;
