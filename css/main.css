@@ -1122,15 +1122,9 @@ footer section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 7.5rem 1fr 7.5rem 1fr 7.5rem 1fr 7.5rem 1fr;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 7.5rem;
-}
-footer section .el:nth-child(2) {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 footer section .el {
   margin-top: 4.2rem;
@@ -1274,7 +1268,10 @@ footer section .quick-link .ct span a:hover {
     margin-bottom: 0 !important;
   }
   footer section .el .ct img {
-    padding: 1rem 0.5rem;
+    margin: 1rem 0.5rem;
+  }
+  footer section .quick-link {
+    margin-left: 0;
   }
 }
 body {
@@ -1836,6 +1833,9 @@ video {
   .ct-concert h1 {
     width: auto !important;
   }
+  .menu-ct .el-category {
+    width: 50%;
+  }
   .learn-more .ct {
     width: 58.9rem !important;
     padding: 3rem 0;
@@ -1851,6 +1851,9 @@ video {
 @media (max-width: 760px) {
   h1 {
     font-size: 3rem !important;
+  }
+  .menu-ct .el-category {
+    width: 100%;
   }
   .container-home {
     padding: 0;

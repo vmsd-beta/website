@@ -3,12 +3,13 @@ footer {
     background: #55575A;
     section {
         display: flex;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 7.5rem; 
-        .el:nth-child(2) {
-            grid-column: span 2;
-        }
+        justify-content: space-between;
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        // gap: 7.5rem; 
+        // .el:nth-child(2) {
+        //     grid-column: span 2;
+        // }
         .el {
             margin-top: 4.2rem;
             .ct-group {
@@ -83,6 +84,12 @@ footer {
         }
     }
 }
+
+// @media (max-width: 987px) {
+//     .quick-link {
+//         margin-left: 10rem;
+//     }
+// }
 
 @media (max-width: 768px) {
     footer {
@@ -160,9 +167,12 @@ footer {
                 .ct {
                     margin-bottom: 0 !important;
                     img {
-                        padding: 1rem 0.5rem;
+                        margin: 1rem 0.5rem;
                     }
                 }
+            }
+            .quick-link {
+                margin-left: 0;
             }
         }
     }

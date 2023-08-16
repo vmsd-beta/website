@@ -533,6 +533,12 @@ video {
         }
     }
 
+    .menu-ct {
+        .el-category {
+            width: 50%;
+        }
+    }
+
     .learn-more {
         .ct {
             width: 58.9rem !important;
@@ -552,6 +558,11 @@ video {
 @media (max-width: 760px) {
     h1 {
         font-size: 3rem !important;
+    }
+    .menu-ct {
+        .el-category {
+            width: 100%;
+        }
     }
     .container-home {
         padding: 0;
