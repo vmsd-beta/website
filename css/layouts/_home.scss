@@ -158,11 +158,20 @@ video {
     }
    
     .group-el {
+        .cas-multi-concert {
+            display: flex;
+            overflow-x: scroll;
+          }
+          .cas-multi-concert .slide {
+            flex: 0 0 auto;
+            width: 100%; // Đảm bảo hiển thị một phần tử trên mỗi slide
+            margin-right: 10px; // Để tạo khoảng cách giữa các slide
+          }
         .item {
             position: relative;
             height: 47.6rem !important;
-            width: 21.5rem !important;
-            transition: ease-in-out 1s;
+            // width: 25.5rem !important;
+            transition: ease-in-out 1.5s;
             &:before {
                 content: "";
                 position: absolute;
@@ -174,10 +183,10 @@ video {
                 background-color: rgba(0, 0, 0, 0.36);
                 pointer-events: none;
             }
-            a {
+            .img {
                 display: block;
                 position: relative;
-                padding-top: 242.5%;
+                // padding-top: 242.5%;
                 height: 47.6rem !important;
                 img {
                     cursor: pointer !important;
@@ -193,9 +202,12 @@ video {
                 top: 90%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                transition: 1s ease-in-out;
+                transition: 1.5s ease-in-out;
                 text-align: center;
                 z-index: 2;
+                .fix-padding {
+                    margin-left: -2rem;
+                }
                 h1 {
                     font-weight: bold;
                     font-size: 2.4rem;
@@ -218,19 +230,19 @@ video {
             }
             &:hover {
                 width: 83.3rem !important;
-                height: 47.6rem !important;
                 > .img {
+                    width: 83.3rem !important;
                     img {
-                        width: 100% !important;
-                        height: 47.6rem !important;
+                        height: 100%;
+                        width: 100%;
                         transition: ease-in-out 1s;
                     }
                 }
                 transition-delay: 0.1s;
                 .ct {
                     position: absolute;
-                    top: 70%;
-                    left: 30%;
+                    top: 80%;
+                    left: 20%;
                     transform: translate(-50%, -50%);
                     text-align: start;
                     h1 {
@@ -257,12 +269,12 @@ video {
             }
         }
         &:hover .item:not(:hover) {
-            width: 11.5rem !important;
+            width: 16rem !important;
             height: 47.6rem !important;
-            transition: ease-in-out 1s;
+            transition: ease-in-out 2s;
             a {
                 img {
-                    width: 11.5rem;
+                    width: 16rem;
                     height: 47.6rem;
                 }
             }

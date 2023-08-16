@@ -243,7 +243,7 @@ jQuery(function ($) {
 
             if ($('.cas-multi-concert').length) {
                 $('.cas-multi-concert').slick({
-                    slidesToShow: 6,
+                    slidesToShow: 7,
                     slidesToScroll: 1,
                     dots: false,
                     arrows: false,
@@ -252,8 +252,8 @@ jQuery(function ($) {
                     swipeToSlide: false,
                     infinite: true,
                     // centerMode: true,
-                    speed: 1500,
-                    variableWidth: true,
+                    speed: 1000,
+                    // variableWidth: true,
                     // responsive: [
                     //     {
                     //         breakpoint: 1599,

@@ -1432,12 +1432,24 @@ video {
 .main-content .slick-list .slick-slide {
   margin: 0 1rem !important;
 }
+.main-content .group-el .cas-multi-concert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+.main-content .group-el .cas-multi-concert .slide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  margin-right: 10px;
+}
 .main-content .group-el .item {
   position: relative;
   height: 47.6rem !important;
-  width: 21.5rem !important;
-  -webkit-transition: ease-in-out 1s;
-  transition: ease-in-out 1s;
+  -webkit-transition: ease-in-out 1.5s;
+  transition: ease-in-out 1.5s;
 }
 .main-content .group-el .item:before {
   content: "";
@@ -1450,13 +1462,12 @@ video {
   background-color: rgba(0, 0, 0, 0.36);
   pointer-events: none;
 }
-.main-content .group-el .item a {
+.main-content .group-el .item .img {
   display: block;
   position: relative;
-  padding-top: 242.5%;
   height: 47.6rem !important;
 }
-.main-content .group-el .item a img {
+.main-content .group-el .item .img img {
   cursor: pointer !important;
   position: absolute;
   top: 0;
@@ -1470,10 +1481,13 @@ video {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
   text-align: center;
   z-index: 2;
+}
+.main-content .group-el .item .ct .fix-padding {
+  margin-left: -2rem;
 }
 .main-content .group-el .item .ct h1 {
   font-weight: bold;
@@ -1498,20 +1512,22 @@ video {
 }
 .main-content .group-el .item:hover {
   width: 83.3rem !important;
-  height: 47.6rem !important;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
+.main-content .group-el .item:hover > .img {
+  width: 83.3rem !important;
+}
 .main-content .group-el .item:hover > .img img {
-  width: 100% !important;
-  height: 47.6rem !important;
+  height: 100%;
+  width: 100%;
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
 }
 .main-content .group-el .item:hover .ct {
   position: absolute;
-  top: 70%;
-  left: 30%;
+  top: 80%;
+  left: 20%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: start;
@@ -1537,13 +1553,13 @@ video {
   border-bottom: 1px solid #FF6C0E;
 }
 .main-content .group-el:hover .item:not(:hover) {
-  width: 11.5rem !important;
+  width: 16rem !important;
   height: 47.6rem !important;
-  -webkit-transition: ease-in-out 1s;
-  transition: ease-in-out 1s;
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
 }
 .main-content .group-el:hover .item:not(:hover) a img {
-  width: 11.5rem;
+  width: 16rem;
   height: 47.6rem;
 }
 
