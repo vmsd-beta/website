@@ -697,6 +697,10 @@ jQuery(function ($) {
     $(document).ready(function() {
         const $box = $('.btn-drop');
 
+        $('#navbarSupportedContent').on('click',function(event) {
+            event.preventDefault();
+        })
+
 
         function showHeader() {
                 $('.btn-let-chat').show();
