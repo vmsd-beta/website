@@ -99,6 +99,12 @@ img{max-width: 100%;vertical-align: middle;object-fit: cover;}
     	padding-left: 1.5rem;
 	}
 }
+@media (max-width: 600px) {
+	.container{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
 @media all and (min-width: 1300px){
 	.container{
 		max-width: 1250px;

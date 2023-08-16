@@ -765,18 +765,20 @@ video {
         h1 {
             font-size: 2rem !important;
         }
+        .btn-view-work {
+            padding-left: 3.2rem;
+        }
     }
 
     .home-banner-color {
         .img {
-            padding-top: 55.972222%;
             img {
                 height: 25rem !important;
             }
         }
         .content-banner {
             .btn-about {
-                margin-top: -1rem;
+                margin-top: 1rem;
                 margin-right: 0rem !important;
             }
             h1 {
@@ -798,5 +800,28 @@ video {
     }
     .ct-product .ct {
         width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-banner-color {
+        .img {
+            padding-top: 55.972222%;
+            img {
+                height: 25rem !important;
+            }
+        }
+        .content-banner {
+            .btn-about {
+                margin-top: -1rem;
+                margin-right: 0rem !important;
+            }
+            h1 {
+                width: 100%;
+            }
+            p {
+                line-height: 140%;
+            }
+        } 
     }
 }

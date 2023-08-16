@@ -194,6 +194,12 @@ img {
   padding-left: 1.5rem;
 }
 
+@media (max-width: 600px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 @media all and (min-width: 1300px) {
   .container {
     max-width: 1250px;
@@ -2032,14 +2038,14 @@ video {
   .content-banner h1 {
     font-size: 2rem !important;
   }
-  .home-banner-color .img {
-    padding-top: 55.972222%;
+  .content-banner .btn-view-work {
+    padding-left: 3.2rem;
   }
   .home-banner-color .img img {
     height: 25rem !important;
   }
   .home-banner-color .content-banner .btn-about {
-    margin-top: -1rem;
+    margin-top: 1rem;
     margin-right: 0rem !important;
   }
   .home-banner-color .content-banner h1 {
@@ -2057,6 +2063,24 @@ video {
   }
   .ct-product .ct {
     width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home-banner-color .img {
+    padding-top: 55.972222%;
+  }
+  .home-banner-color .img img {
+    height: 25rem !important;
+  }
+  .home-banner-color .content-banner .btn-about {
+    margin-top: -1rem;
+    margin-right: 0rem !important;
+  }
+  .home-banner-color .content-banner h1 {
+    width: 100%;
+  }
+  .home-banner-color .content-banner p {
+    line-height: 140%;
   }
 }
 .ct-main-group .el-group .ct-expo .item-1 {
