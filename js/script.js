@@ -323,19 +323,41 @@ jQuery(function ($) {
                 })
             }
 
-            $('.slider-for').slick({
+            $('.slider-for-expo').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
                 autoplay: true,
                 fade: true,
-                asNavFor: '.slider-nav'
+                asNavFor: '.slider-nav-expo'
             });
-            $('.slider-nav').slick({
+
+            
+            $('.slider-nav-expo').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 autoplay: true,
-                asNavFor: '.slider-for',
+                asNavFor: '.slider-for-expo',
+                dots: true,
+                focusOnSelect: true,
+                nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
+                prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
+            });
+
+            $('.slider-for-trade-show').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                fade: true,
+                asNavFor: '.slider-nav-trade-show'
+            });
+
+            $('.slider-nav-trade-show').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                asNavFor: '.slider-for-trade-show',
                 dots: true,
                 focusOnSelect: true,
                 nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
