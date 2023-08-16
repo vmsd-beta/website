@@ -283,110 +283,9 @@ jQuery(function ($) {
                 })
             }
 
-            if ($('.cas-multi-client').length) {
-                $('.cas-multi-client').slick({
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    dots: false,
-                    arrows: false,
-                    autoplay: true,
-                    autoplaySpeed: 2500,
-                    swipeToSlide: true,
-                    infinite: true,
-                    speed: 1000,
-                    responsive: [
-                        {
-                            breakpoint: 1599,
-                            settings: {
-                                slidesToShow: 5,
-                            }
-                        },
-                        {
-                            breakpoint: 1199,
-                            settings: {
-                                slidesToShow: 4,
-                            }
-                        },
-                        {
-                            breakpoint: 991,
-                            settings: {
-                                slidesToShow: 3,
-                            }
-                        },
-                        {
-                            breakpoint: 676,
-                            settings: {
-                                slidesToShow: 3,
-                            }
-                        }
-                    ],
-                })
-            }
 
-            $('.slider-for-pop-up').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                autoplay: true,
-                fade: true,
-                asNavFor: '.slider-nav-pop-up'
-            });
 
-            
-            $('.slider-nav-pop-up').slick({
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                autoplay: true,
-                asNavFor: '.slider-for-pop-up',
-                infinite: true,
-                dots: true,
-                focusOnSelect: true,
-                nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
-                prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
-            });
 
-            $('.slider-for-expo').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                autoplay: true,
-                fade: true,
-                asNavFor: '.slider-nav-expo'
-            });
-
-            
-            $('.slider-nav-expo').slick({
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                autoplay: true,
-                asNavFor: '.slider-for-expo',
-                infinite: true,
-                dots: true,
-                focusOnSelect: true,
-                nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
-                prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
-            });
-
-            $('.slider-for-trade-show').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                autoplay: true,
-                fade: true,
-                asNavFor: '.slider-nav-trade-show'
-            });
-
-            $('.slider-nav-trade-show').slick({
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                autoplay: true,
-                asNavFor: '.slider-for-trade-show',
-                infinite: true,
-                dots: true,
-                focusOnSelect: true,
-                nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
-                prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
-            });
 
             // $('.cas-home').owlCarousel({
             //     items: 1,
@@ -790,4 +689,110 @@ jQuery(function ($) {
           }
         });
       });
+
+    $('.slider-for-trade-show').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        dotsClass: 'slider-dots',
+        fade: true,
+        asNavFor: '.slider-nav-trade-show'
+    });
+
+    $('.slider-nav-trade-show').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        asNavFor: '.slider-for-trade-show',
+        infinite: true,
+        dots: true,
+        focusOnSelect: true,
+        nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
+        prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
+    });
+
+    if ($('.cas-multi-client').length) {
+        $('.cas-multi-client').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            swipeToSlide: true,
+            infinite: true,
+            speed: 1000,
+            responsive: [
+                {
+                    breakpoint: 1599,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 676,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
+            ],
+        })
+    }
+
+    $('.slider-for-pop-up').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        fade: true,
+        asNavFor: '.slider-nav-pop-up'
+    });
+
+    
+    $('.slider-nav-pop-up').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        asNavFor: '.slider-for-pop-up',
+        infinite: true,
+        dots: true,
+        focusOnSelect: true,
+        nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
+        prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
+    });
+
+    $('.slider-for-expo').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        fade: true,
+        asNavFor: '.slider-nav-expo'
+    });
+
+    
+    $('.slider-nav-expo').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        asNavFor: '.slider-for-expo',
+        infinite: true,
+        dots: true,
+        focusOnSelect: true,
+        nextArrow: '<i class="fal fa-angle-right smooth next"></i>',
+        prevArrow: '<i class="fal fa-angle-left smooth prev"></i>',
+    });
 })
