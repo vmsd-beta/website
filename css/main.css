@@ -1448,8 +1448,8 @@ video {
 .main-content .group-el .item {
   position: relative;
   height: 47.6rem !important;
-  -webkit-transition: ease-in-out 1.5s;
-  transition: ease-in-out 1.5s;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 .main-content .group-el .item:before {
   content: "";
@@ -1481,8 +1481,8 @@ video {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: 1.5s ease-in-out;
-  transition: 1.5s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   text-align: center;
   z-index: 2;
 }
@@ -1561,6 +1561,8 @@ video {
 .main-content .group-el:hover .item:not(:hover) a img {
   width: 16rem;
   height: 47.6rem;
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
 }
 
 .ct-client .title {

@@ -171,7 +171,7 @@ video {
             position: relative;
             height: 47.6rem !important;
             // width: 25.5rem !important;
-            transition: ease-in-out 1.5s;
+            transition: ease-in-out 1s;
             &:before {
                 content: "";
                 position: absolute;
@@ -202,7 +202,7 @@ video {
                 top: 90%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                transition: 1.5s ease-in-out;
+                transition: 1s ease-in-out;
                 text-align: center;
                 z-index: 2;
                 .fix-padding {
@@ -276,6 +276,7 @@ video {
                 img {
                     width: 16rem;
                     height: 47.6rem;
+                    transition: ease-in-out 2s;
                 }
             }
         }
