@@ -158,11 +158,11 @@ video {
     }
    
     .group-el {
-
         .item {
             position: relative;
             height: 47.6rem !important;
-            width: 25rem !important;
+            width: 21.5rem !important;
+            transition: ease-in-out 1s;
             &:before {
                 content: "";
                 position: absolute;
@@ -180,6 +180,7 @@ video {
                 padding-top: 242.5%;
                 height: 47.6rem !important;
                 img {
+                    cursor: pointer !important;
                     position: absolute;
                     top: 0;                    
                     left: 0;
@@ -220,8 +221,9 @@ video {
                 height: 47.6rem !important;
                 > .img {
                     img {
-                        width: 83.3rem !important;
+                        width: 100% !important;
                         height: 47.6rem !important;
+                        transition: ease-in-out 1s;
                     }
                 }
                 transition-delay: 0.1s;
@@ -254,14 +256,15 @@ video {
                 }
             }
         }
-    }
-    &:hover .item:not(:hover) {
-        width: 11.5rem !important;
-        height: 47.6rem !important;
-        a {
-            img {
-                width: 11.5rem;
-                height: 47.6rem;
+        &:hover .item:not(:hover) {
+            width: 11.5rem !important;
+            height: 47.6rem !important;
+            transition: ease-in-out 1s;
+            a {
+                img {
+                    width: 11.5rem;
+                    height: 47.6rem;
+                }
             }
         }
     }
