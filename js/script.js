@@ -705,6 +705,11 @@ jQuery(function ($) {
         function showHeader() {
                 $('.btn-let-chat').show();
                 $('.logo').show();
+                if ($(this).scrollTop() > 0) {
+                    hideHeader();
+                } else {
+                    showHeader();
+                }
         }
 
         function hideHeader() {
@@ -732,7 +737,7 @@ jQuery(function ($) {
         const scrollMessage = $('.home-banner');
   
         $(window).on('scroll', function() {
-          if ($(this).scrollTop() > 0) {
+          if ($(scrollMessage).scrollTop() > 0) {
             hideHeader();
           } else {
             showHeader();
