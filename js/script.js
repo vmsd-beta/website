@@ -316,7 +316,7 @@ jQuery(function ($) {
                         {
                             breakpoint: 676,
                             settings: {
-                                slidesToShow: 2,
+                                slidesToShow: 3,
                             }
                         }
                     ],

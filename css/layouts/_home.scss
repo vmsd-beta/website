@@ -755,6 +755,9 @@ video {
 }
 
 @media (max-width: 600px) {
+    .slick-list .slick-slide {
+        margin: 0 2.5rem !important;
+    }
     body {
         margin-top: 8.5rem;
     }

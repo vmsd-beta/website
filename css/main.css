@@ -2029,6 +2029,9 @@ video {
   }
 }
 @media (max-width: 600px) {
+  .slick-list .slick-slide {
+    margin: 0 2.5rem !important;
+  }
   body {
     margin-top: 8.5rem;
   }
@@ -2502,6 +2505,9 @@ video {
   }
 }
 @media (max-width: 768px) {
+  .ct-main-group .el-group .ct .item-1 h1 {
+    margin-top: 1rem !important;
+  }
   .expert {
     margin-bottom: 0rem;
   }
