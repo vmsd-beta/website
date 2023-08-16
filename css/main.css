@@ -878,9 +878,12 @@ header.scroll {
 
 .btn-drop {
   padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
   color: #FF6C0E;
 }
 .btn-drop i {
+  width: 5rem;
   font-size: 3rem;
 }
 
@@ -901,7 +904,7 @@ header.scroll {
   height: 11.5rem;
   margin: 0 auto;
   padding: 3rem 0;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
   position: relative;
 }
 
