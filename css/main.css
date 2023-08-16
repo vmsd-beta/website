@@ -1732,6 +1732,9 @@ video {
 .learn-more.learn-more-gtr .ct {
   width: 66rem !important;
 }
+.learn-more:hover h1 {
+  color: #ffffff;
+}
 .learn-more .ct {
   width: 58.9rem;
   padding: 10rem 0;

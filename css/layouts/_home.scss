@@ -423,6 +423,11 @@ video {
             width: 66rem !important;
         }
     }
+    &:hover {
+        h1 {
+            color: $c2;
+        }
+    }
     .ct {
         width: 58.9rem;
         padding: 10rem 0;
