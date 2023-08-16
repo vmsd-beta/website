@@ -199,7 +199,7 @@
                     .info {
                         position: absolute;
                         left: 0%;
-                        top: 80%;
+                        top: 85%;
                         transform: translate(-50%, -50%);
                         color: $c2;
                         opacity: 0;
@@ -210,15 +210,20 @@
                         span {
                             font-size: 1.4rem;
                             white-space: nowrap;
+                            line-height: 108.4%;
+                            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
                         }
                     }
                     .img {
+                        cursor: pointer;
                         position: relative;
                         padding-top: 149.130434783%;
                         display: block;
+                        overflow: hidden;
                         img {
                             position: absolute;
                             top: 0;
+                            object-fit: cover;
                             left: 0;
                             width: 100%;
                             height: 100%;
@@ -228,20 +233,28 @@
                         margin: 0px auto;
                         width: 100%;
                     }
-                    .img-bg {
-                        opacity: 0;
-                        width: 100%;
-                    }
+                    // .img-bg {
+                    //     opacity: 1;
+                    //     width: 100%;
+                    //     background-blend-mode: multiply;
+                    // }
         
                     &:hover {
                         .info {
                             opacity: 1;
                             transition: 1s ease-in-out;
-                            left: 40%;
+                            left: 50%;
                             text-align: start;
                         }
-                        .img-bg {
-                            opacity: 0.2;
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            mix-blend-mode: multiply;
+                            background-image: url('../images/bg-expert.png');
+                            background-size: cover;
                         }
                     }
                 }

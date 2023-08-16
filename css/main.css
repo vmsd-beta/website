@@ -1027,9 +1027,7 @@ header.scroll {
   color: #FF6C0E;
   font-size: 3rem;
 }
-.btn-main a {
-  padding: 8% 12% !important;
-}
+
 .btn-main {
   cursor: pointer;
   width: 18rem;
@@ -2072,7 +2070,7 @@ video {
 .expert .el-group .ct-group .ct .el .info {
   position: absolute;
   left: 0%;
-  top: 80%;
+  top: 85%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #ffffff;
@@ -2085,15 +2083,22 @@ video {
 .expert .el-group .ct-group .ct .el .info span {
   font-size: 1.4rem;
   white-space: nowrap;
+  line-height: 108.4%;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 .expert .el-group .ct-group .ct .el .img {
+  cursor: pointer;
   position: relative;
   padding-top: 149.130434783%;
   display: block;
+  overflow: hidden;
 }
 .expert .el-group .ct-group .ct .el .img img {
   position: absolute;
   top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
   left: 0;
   width: 100%;
   height: 100%;
@@ -2102,19 +2107,22 @@ video {
   margin: 0px auto;
   width: 100%;
 }
-.expert .el-group .ct-group .ct .el .img-bg {
-  opacity: 0;
-  width: 100%;
-}
 .expert .el-group .ct-group .ct .el:hover .info {
   opacity: 1;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  left: 40%;
+  left: 50%;
   text-align: start;
 }
-.expert .el-group .ct-group .ct .el:hover .img-bg {
-  opacity: 0.2;
+.expert .el-group .ct-group .ct .el:hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  background-image: url("../images/bg-expert.png");
+  background-size: cover;
 }
 
 .ask {
