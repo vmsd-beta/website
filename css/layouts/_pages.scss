@@ -520,3 +520,32 @@
 
     }
 }
+
+@media (max-width: 420px) {
+    .expert .el-group .ct-group .ct .el .info {
+        width: 85% !important;
+        h1 {
+            font-size: 2rem !important;
+        }
+    }
+    .expert .el-group .ct-group .ct .el .info span {
+        font-size: 1.3rem !important;
+        white-space: inherit;
+    }
+
+    .des h1 {
+        margin: 1.6rem 0 !important;
+        text-align: center;
+        font-size: 4.8rem;
+        font-weight: bold;
+    }
+
+    .ask .form {
+        margin: 4.3rem 0 !important;
+    }
+
+    .col-lg-8 {
+        max-width: 100%;
+    }
+
+}

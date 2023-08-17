@@ -1040,6 +1040,10 @@ header.scroll {
   font-size: 3rem;
 }
 
+.btn-main a {
+  padding: 10% 4%;
+}
+
 .btn-main {
   cursor: pointer;
   width: 18rem;
@@ -1113,6 +1117,11 @@ header.scroll {
   }
   .act-header {
     padding: 0px 2rem;
+  }
+  .act-header .btn-main {
+    width: 13rem;
+    height: 4.2rem;
+    font-size: 1.2rem;
   }
   .logo {
     top: 36%;
@@ -1271,9 +1280,11 @@ footer section .quick-link .ct span a:hover {
   }
   footer section .el .social {
     margin: 0;
+    padding-bottom: 0 !important;
   }
   footer section .el .ct {
     margin-bottom: 0 !important;
+    padding-bottom: 2rem;
   }
   footer section .el .ct img {
     margin: 1rem 0.5rem;
@@ -2151,6 +2162,12 @@ video {
   .home-banner-color .content-banner p {
     line-height: 140%;
   }
+  .main-content .group-el .item:hover {
+    margin-left: 0 !important;
+  }
+  .main-content .group-el:hover .item:not(:hover) {
+    margin-left: 0 !important;
+  }
 }
 .ct-main-group .el-group .ct-expo .item-1 {
   margin-bottom: 20%;
@@ -2619,5 +2636,29 @@ video {
   }
   .expert .el-group .ct-group .ct .el .info h1 {
     font-size: 3rem !important;
+  }
+}
+@media (max-width: 420px) {
+  .expert .el-group .ct-group .ct .el .info {
+    width: 85% !important;
+  }
+  .expert .el-group .ct-group .ct .el .info h1 {
+    font-size: 2rem !important;
+  }
+  .expert .el-group .ct-group .ct .el .info span {
+    font-size: 1.3rem !important;
+    white-space: inherit;
+  }
+  .des h1 {
+    margin: 1.6rem 0 !important;
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: bold;
+  }
+  .ask .form {
+    margin: 4.3rem 0 !important;
+  }
+  .col-lg-8 {
+    max-width: 100%;
   }
 }

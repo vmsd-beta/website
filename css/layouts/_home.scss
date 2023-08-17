@@ -905,4 +905,16 @@ video {
             }
         } 
     }
+    .main-content {
+        .group-el {
+            .item {
+                &:hover {
+                    margin-left: 0 !important;
+                }
+            }
+            &:hover .item:not(:hover) {
+                margin-left: 0 !important;
+            }
+        }
+    }
 }

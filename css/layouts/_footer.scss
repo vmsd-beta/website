@@ -163,12 +163,14 @@ footer {
             .el {
                 .social {
                     margin: 0;
+                    padding-bottom: 0 !important;
                 }
                 .ct {
                     margin-bottom: 0 !important;
                     img {
                         margin: 1rem 0.5rem;
                     }
+                    padding-bottom: 2rem;
                 }
             }
             .quick-link {

@@ -167,7 +167,9 @@ header {
 		font-size: 3rem;
 	}
 }
-
+.btn-main a {
+	padding: 10% 4%;
+}
 .btn-main {
 	cursor: pointer;
 	width: 18rem;
@@ -246,6 +248,11 @@ header {
 	}
 	.act-header {
 		padding: 0px 2rem;
+		.btn-main {
+			width: 13rem;
+			height: 4.2rem;
+			font-size: 1.2rem;
+		}
 	}
 	.logo {
 		top: 36%;
@@ -253,4 +260,5 @@ header {
 			width: 10rem;
 		}
 	}
+
 }
