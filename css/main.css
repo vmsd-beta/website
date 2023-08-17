@@ -1538,6 +1538,8 @@ video {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: start;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 .main-content .group-el .item:hover .ct h1 {
   font-weight: bold;
@@ -1548,6 +1550,8 @@ video {
   color: #ffffff;
   width: auto;
   margin-top: 0rem;
+  -webkit-transition: ease-in-out 2s;
+  transition: ease-in-out 2s;
 }
 .main-content .group-el .item:hover .ct img {
   display: inline;
@@ -1555,6 +1559,8 @@ video {
 .main-content .group-el .item:hover .ct button {
   display: inline;
   color: #ffffff;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 .main-content .group-el .item:hover .ct button:hover {
   border-bottom: 1px solid #FF6C0E;
@@ -1591,6 +1597,8 @@ video {
   width: 15rem;
   margin-top: -6rem;
   margin-left: 6rem;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 .main-content .group-el:hover .item:not(:hover) .ct img {
   display: initial;

@@ -241,6 +241,7 @@ video {
                     left: 20%;
                     transform: translate(-50%, -50%);
                     text-align: start;
+                    transition: ease-in-out 1s;
                     h1 {
                         font-weight: bold;
                         font-size: 2.4rem;
@@ -249,6 +250,8 @@ video {
                         color: $c2;
                         width: auto;
                         margin-top: 0rem;
+                        transition: ease-in-out 2s;
+
                     }
                     img {
                         display: inline;
@@ -259,6 +262,7 @@ video {
                         &:hover {
                             border-bottom: 1px solid $c3;
                         }
+                        transition: ease-in-out 1s;
 
                     }
                 }
@@ -289,6 +293,7 @@ video {
                     width: 15rem;
                     margin-top: -6rem;
                     margin-left: 6rem;
+                    transition: ease-in-out 1s;
                 }
                 img {
                     display: initial;
