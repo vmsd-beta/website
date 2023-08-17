@@ -1603,6 +1603,9 @@ video {
   font-size: 1.6rem;
 }
 
+.ct-client .slick-list .slick-slide img {
+  width: 45%;
+}
 .ct-client .title {
   margin-top: 13rem;
   margin-bottom: 6.5rem;
@@ -1653,8 +1656,30 @@ video {
       -ms-flex-align: center;
           align-items: center;
 }
+.ct-product .ct .item {
+  text-align: center;
+}
+.ct-product .ct .item:nth-child(2) img {
+  margin-top: 2.5rem;
+}
 .ct-product .ct .item:hover {
   cursor: pointer;
+}
+.ct-product .ct .item .img-icon {
+  height: 15rem;
+  display: block;
+}
+.ct-product .ct .item .learn-more {
+  background-color: #fff;
+  color: black;
+  font-size: 13px;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  padding: 0.2rem 0.1rem 0 0.1rem;
+}
+.ct-product .ct .item .learn-more:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #FF6C0E;
 }
 
 .ct-more {
@@ -2376,7 +2401,7 @@ video {
 }
 
 .ask {
-  margin-bottom: 21.2rem;
+  margin-bottom: 18.2rem;
   margin-top: 41rem;
 }
 .ask h1 {
@@ -2414,6 +2439,10 @@ video {
   width: 70%;
   border: 0.2rem solid #FF6C0E;
   border-radius: 2rem;
+  margin-bottom: 3.6rem;
+}
+.ask .form .btn-submit {
+  text-align: center;
 }
 
 @media (max-width: 1250px) {

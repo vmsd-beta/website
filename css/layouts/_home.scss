@@ -307,6 +307,11 @@ video {
 
 
 .ct-client {
+    .slick-list .slick-slide {
+       img {
+        width: 45%;
+       }
+    }
     .title {
         h1 {
             font-weight: bold;
@@ -345,8 +350,30 @@ video {
         width: 40%;
         align-items: center;
         .item{
+            text-align: center;
+            &:nth-child(2) {
+                img {
+                    margin-top: 2.5rem;
+                }
+            }
             &:hover {
                 cursor: pointer;
+            }
+            .img-icon {
+                height: 15rem;
+                display: block;
+            }
+            .learn-more {
+                background-color: #fff;
+                color: black;
+                font-size: 13px;
+                border-bottom: 1px solid black;
+                display: inline-block;
+                padding: 0.2rem 0.1rem 0 0.1rem;
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 1px solid $c3;
+                }
             }
         }
     }

@@ -297,7 +297,7 @@
 }
 
 .ask {
-    margin-bottom: 21.2rem;
+    margin-bottom: 18.2rem;
     margin-top: 41rem;
     h1 {
         text-align: center;
@@ -329,6 +329,10 @@
             width: 70%;
             border: 0.2rem solid $c3;
             border-radius: 2rem;
+            margin-bottom: 3.6rem;
+        }
+        .btn-submit {
+            text-align: center;
         }
     }
 }
