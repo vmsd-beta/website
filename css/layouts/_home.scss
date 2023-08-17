@@ -651,6 +651,40 @@ video {
     }
 }
 
+@media (max-width: 990px) {
+
+    .main-content {
+        .group-el {
+            
+            .item {
+                &:nth-child(n + 2) {
+                    margin-left: 0.5rem;
+                }
+                .ct {
+                    h1 {
+                        font-size: 1.8rem !important;
+                        width: 6rem;
+                        margin-top: -3rem;
+                    }
+                    img {
+                        width: 8rem !important;
+                    }
+                }
+            }
+            &:hover .item:not(:hover) {
+                .ct {
+                    display: none !important;
+                    top: 90%;
+                    left: 40%;
+                    .fix-padding {
+                        margin-left: -1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 760px) {
     h1 {
         font-size: 3rem !important;

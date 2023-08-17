@@ -1946,6 +1946,27 @@ video {
     color: #ffffff;
   }
 }
+@media (max-width: 990px) {
+  .main-content .group-el .item:nth-child(n+2) {
+    margin-left: 0.5rem;
+  }
+  .main-content .group-el .item .ct h1 {
+    font-size: 1.8rem !important;
+    width: 6rem;
+    margin-top: -3rem;
+  }
+  .main-content .group-el .item .ct img {
+    width: 8rem !important;
+  }
+  .main-content .group-el:hover .item:not(:hover) .ct {
+    display: none !important;
+    top: 90%;
+    left: 40%;
+  }
+  .main-content .group-el:hover .item:not(:hover) .ct .fix-padding {
+    margin-left: -1rem;
+  }
+}
 @media (max-width: 760px) {
   h1 {
     font-size: 3rem !important;
