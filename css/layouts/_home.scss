@@ -346,22 +346,17 @@ video {
     }
     .ct {
         display: flex;
-        justify-content: space-between;
-        width: 40%;
         align-items: center;
         .item{
             text-align: center;
-            &:nth-child(2) {
-                img {
-                    margin-top: 2.5rem;
-                }
-            }
+            margin-right: 10rem;
             &:hover {
                 cursor: pointer;
             }
             .img-icon {
                 height: 15rem;
                 display: block;
+                line-height: 15rem;
             }
             .learn-more {
                 background-color: #fff;
@@ -678,9 +673,26 @@ video {
     .ct-product {
         .ct {
             .item {
-                width: 50% !important;
+                margin-right: 2rem;
                 img {
-                    width: 80% !important;
+                    width: 60% !important;
+                }
+            }
+            .img-icon {
+                display: block;
+                height: 10rem !important;
+                line-height: 10rem !important;
+            }
+            .learn-more {
+                background-color: #fff;
+                color: black;
+                font-size: 13px;
+                border-bottom: 1px solid black;
+                display: inline-block;
+                padding: 0.2rem 0.1rem 0 0.1rem;
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 1px solid $c3;
                 }
             }
         }
@@ -785,6 +797,9 @@ video {
     .slick-list .slick-slide {
         margin: 0 2.5rem !important;
     }
+    .ct-client .slick-list .slick-slide img {
+        width: 70% !important;
+    }
     body {
         margin-top: 8.5rem;
     }
@@ -827,9 +842,6 @@ video {
             font-size: 2rem !important;
             margin-right: 2rem !important;
         }
-    }
-    .ct-product .ct {
-        width: 90%;
     }
 }
 
