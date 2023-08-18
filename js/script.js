@@ -640,13 +640,6 @@ jQuery(function ($) {
     });
 
     $(document).ready(function() {
-        const $box = $('.btn-drop');
-
-        // $('#navbarSupportedContent').on('click',function(event) {
-        //     event.preventDefault();
-        // })
-
-
         function showHeader() {
                 $('.btn-let-chat').show();
                 $('.logo').show();
@@ -663,11 +656,11 @@ jQuery(function ($) {
         }
   
         // Hover
-        $box.on('mouseenter', function() {
+        $('.menu-drop').on('mouseenter', function() {
             hideHeader();
         });
   
-        $box.on('mouseleave', function() {
+        $('.menu-drop').on('mouseleave', function() {
             showHeader();
         });
   
