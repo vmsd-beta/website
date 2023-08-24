@@ -74,8 +74,7 @@ footer {
     }
     color: $c2;
 }
-@media (max-width: 1024px) {
-    
+@media (max-width: 1200px) {
     .el {
         .el-group {
             .ct-group {
@@ -84,25 +83,48 @@ footer {
         }
     }
 }
+@media (max-width: 1024px) {
+    footer {
+        *, ::after, ::before {
+            box-sizing:initial !important;
+        }
+        .el {
+            .el-group {
+                .ct-group {
+                    display: block;
+                }
+            }
+        }
+        // .container {
+        //     margin: 0 auto !important;
 
-// @media (max-width: 987px) {
-//     .quick-link {
-//         margin-left: 10rem;
-//     }
-// }
+        // }
+        // .container-home {
+        //     margin: 0 auto !important;
+        // }
+
+    }
+    
+}
+
 
 @media (max-width: 768px) {
     footer {
+        *, ::after, ::before {
+            box-sizing: border-box !important;
+        }
         height: auto;
         section {
             display: block;
+            padding-bottom: 7.2rem !important;
+            padding-top: 3.6rem !important;
             .el:not(:last-child) {
                 &:hover {
                     cursor: pointer;
                 }
                 margin-top: 0;
                 h1 {
-                    font-size: 2rem !important;
+                    font-size: 1.3rem !important;
                     border-bottom: 1px solid gray;
                     width:100%;
                     padding: 1rem 0;
@@ -120,20 +142,16 @@ footer {
                         width: 0;
                         height: 0;
                         border-style: solid;
-                        border-width: 5px 5px 0 5px; /* Điều chỉnh giá trị 10px tùy theo kích thước bạn muốn */
+                        border-width: 4px 4px 0 4px; /* Điều chỉnh giá trị 10px tùy theo kích thước bạn muốn */
                         border-color: $c2 transparent transparent transparent; /* Điều chỉnh màu sắc tùy ý */
                         transform: translate(-50%, -100%);
                     }
                 }
-                .ct {
-                    padding: 0 2rem;
-                }
                 h2 {
-                    font-size: 1.8rem;
+                    font-size: 1rem;
                 }
                 span {
-                    font-size: 1.5rem;
-                    padding: 0 3rem;
+                    font-size: 1rem !important;
                 }
                 .ct-group {
                     display: block;
@@ -149,7 +167,7 @@ footer {
             .el:last-child {
                 text-align: center;
                 h1 {
-                    font-size: 2rem !important;
+                    font-size: 1.3rem !important;
                 }
                 img {
                     &:hover {
@@ -157,10 +175,13 @@ footer {
                     }
                 }
                 span {
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
             }
             .el {
+                h1 {
+                    margin-bottom: 1rem;
+                }
                 .social {
                     margin: 0;
                     padding-bottom: 0 !important;

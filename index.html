@@ -71,9 +71,11 @@
 
         <body>
             <section class="home-banner">
-                <video autoplay loop id="video-home" width="100%" height="100%">
-                    <source src="./videos/video-home.mp4" type="video/mp4">
-                </video>
+                <div class="video">
+                    <video autoplay class="source" loop id="video-home" width="100%" height="100%">
+                        <source src="./videos/video-home.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <!-- <a class="img-index" href="javascript:;">         -->
                 <!-- </a> -->
                 <div class="container container-home content-banner">
@@ -83,10 +85,16 @@
                     <button class="btn-main btn-view-work fadeInLeft delay02 wow" id="view-work">
                         VIEW WORKS
                     </button>
+                    <button class="btn-main fadeInLeft delay02 wow" id="watch-video">
+                        WATCH VIDEO 
+                    </button>
                 </div>
             </section>
             <section class="home-banner-color">
-                <a class="img" href="javascript:;"><img src="./images/banner_color.jpg" alt=""></a>
+                <a class="img" href="javascript:;">
+                    <img src="./images/banner_color.jpg" alt="">
+                    <div class="overlay"></div>
+                </a>
                 <div class="container container-home content-banner content-banner-color">
                     <h1 class="fadeInLeft delay02 wow col-lg-8">
                         Complete end-to-end retail experience solution
@@ -240,7 +248,10 @@
 
             <section>
                 <div class="ct-more">
-                    <a class="img" href="javascript:;"><img src="./images/banner_color.jpg" alt=""></a>
+                    <a class="img" href="javascript:;">
+                        <img src="./images/banner_color.jpg" alt="">
+                        <div class="overlay"></div>
+                    </a>
                     <div class="ct">
                         <div class="item" id="service">
                             <div class="el">
@@ -265,7 +276,7 @@
             </section>
         </body>
         <footer>
-            <section class="container">
+            <section class="container container-home">
                 <div class="el">
                     <h1>VMSD Pte Ltd </h1>
                     <div class="el-group">

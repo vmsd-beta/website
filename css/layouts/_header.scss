@@ -61,7 +61,7 @@ header {
 	width: 100%;
 	position: absolute;
 	background-color: rgba(0,0,0,0.6);
-	top: 100%;
+	top: 0;
 	left: 0;
 	.on-our-work {
 		display: flex !important;
@@ -76,9 +76,10 @@ header {
 	// }
 
 	.el-group {
-		padding: 4.506666666% 0;
+		padding-top: 10.5555555% !important;
 		margin: 0 auto;
 		display: flex;
+		margin-bottom: 2rem;
 		.el-category {
 			display: flex;
 			flex-wrap: wrap;
@@ -224,6 +225,13 @@ header {
 		height: 4.2rem;
 		font-size: 1.2rem;
 	}
+	.btn-drop i {
+		width: 100% !important;
+		padding-left: 1px !important;
+	}
+	.btn-let-chat {
+		display: none !important;
+	}
 	.menu-ct {
 		background-color: rgba(0, 0, 0, 0.9);
 		.el-group {
@@ -247,11 +255,11 @@ header {
 		padding: 2rem 0;
 	}
 	.act-header {
-		padding: 0px 2rem;
+		padding: 0;
 		.btn-main {
 			width: 13rem;
 			height: 4.2rem;
-			font-size: 1.2rem;
+			font-size: 1rem;
 		}
 	}
 	.logo {

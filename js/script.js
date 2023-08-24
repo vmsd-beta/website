@@ -729,21 +729,45 @@ jQuery(function ($) {
                         slidesToShow: 4,
                     }
                 },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 676,
-                    settings: {
-                        slidesToShow: 3,
-                    }
-                }
             ],
         })
     }
+
+    function destroySlider() {
+        if ($('.cas-multi-client').hasClass('slick-initialized')) {
+            $('.cas-multi-client').slick('unslick');
+        }
+    }
+
+    function checkWindowSize() {
+        if ($(window).width() < 600) {
+            destroySlider();
+        } else {
+            initSlider();
+        }
+    }
+
+    function checkWidth() {
+        if ($(window).width() < 600) {
+            // Attach click event to the document
+            $('#watch-video').on('click', function() {
+                // Play the video
+                document.getElementById('video-home').play();
+                // Remove the click event to prevent multiple plays
+                $(document).off('click');
+            });
+        }
+    }
+
+    // Gọi hàm kiểm tra kích thước màn hình lúc ban đầu
+    checkWindowSize();
+    checkWidth();
+
+    // Theo dõi sự kiện thay đổi kích thước màn hình
+    $(window).on('resize', function() {
+        checkWindowSize();
+        checkWidth();
+    });
 
     $('.slider-for-pop-up').slick({
         slidesToShow: 1,

@@ -521,7 +521,48 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
+    .home-banner {
+        .img {
+            padding-top: 124.74916388%;
+        }
+        h1 {
+            margin: 1rem 0;
+        }
+    }
+    .learn-more {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        height: 200px !important;
+    }
+
+    .ct-main-group .el-group .ct {
+        margin: 4rem !important;
+        .item-1 {
+            h1 {
+                font-size: 1.4rem !important;
+                margin-top: 2rem !important;
+                margin-bottom: 0.5rem;
+            }
+            span {
+                font-size: 1rem !important;
+            }
+            .btn-start-project {
+                text-align: center;
+                .btn-main {
+                    font-size: 1rem !important;
+                    width: 11.5rem !important;
+                    height: 2.9rem !important;
+                    margin: 1rem;
+                    a {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
     .expert .el-group .ct-group .ct .el .info {
         width: 85% !important;
         h1 {
