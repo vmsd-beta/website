@@ -522,19 +522,35 @@
 }
 
 @media (max-width: 600px) {
+    .content-banner {
+        img {
+            width: 10rem !important;
+        }
+    }
     .home-banner {
+        span {
+            font-size: 1rem !important;
+        }
         .img {
             padding-top: 124.74916388%;
         }
         h1 {
-            margin: 1rem 0;
+            margin: 1.5rem 0 0.5rem 0;
         }
+
     }
     .learn-more {
+        .ct {
+            margin: 4rem auto !important;
+        }
         h1 {
+            width: 65%;
+            margin: 2rem auto;
             font-size: 2.2rem !important;
         }
-        height: 200px !important;
+        i {
+            font-size: 3rem !important;
+        }
     }
 
     .ct-main-group .el-group .ct {
@@ -547,12 +563,12 @@
             }
             span {
                 font-size: 1rem !important;
+                line-height: 196.9% !important;
             }
             .btn-start-project {
                 text-align: center;
                 .btn-main {
                     font-size: 1rem !important;
-                    width: 11.5rem !important;
                     height: 2.9rem !important;
                     margin: 1rem;
                     a {
@@ -574,15 +590,45 @@
         white-space: inherit;
     }
 
+    .des {
+        margin-top: 6.5rem;
+    }
+
     .des h1 {
-        margin: 1.6rem 0 !important;
+        margin: 0rem 0 !important;
         text-align: center;
-        font-size: 4.8rem;
+        font-size: 2.2rem;
         font-weight: bold;
+    }
+    .des p {
+        font-size: 1rem;
+        margin: 3rem auto;
+        line-height: 196.9%;
+    }
+
+    .ask {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        .el {
+            label {
+                font-size: 1rem;
+                margin: 1rem 0 0 0;
+            }
+        }
     }
 
     .ask .form {
-        margin: 4.3rem 0 !important;
+        margin: 2.3rem 0 !important;
+        input {
+            height: 3.2rem;
+            border: 1px solid $c3;
+        }
+        textarea {
+            border: 1px solid $c3;
+            height: 15rem;
+            margin-bottom: 1.5rem;
+        }
     }
 
     .col-lg-8 {
@@ -590,3 +636,4 @@
     }
 
 }
+

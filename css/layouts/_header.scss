@@ -20,6 +20,10 @@ header {
 	transition-delay: 0.5s;
 }
 
+.ic-close {
+	display: none;
+}
+
 .btn-drop {
 	padding: 1rem;
 	background-color: white;
@@ -41,6 +45,7 @@ header {
   transition-delay: 0s, 0s, 1s;
   cursor: pointer;
 }
+
 .header {
 	height: 11.5rem;
 	margin: 0 auto;
@@ -70,16 +75,13 @@ header {
 			white-space: nowrap;
 		}
 	}
-	// .our-work:hover ~ .el.el-page {
-	// 	background-color: red !important;
-	// 	display: flex !important
-	// }
 
 	.el-group {
 		padding-top: 10.5555555% !important;
 		margin: 0 auto;
 		display: flex;
 		margin-bottom: 2rem;
+
 		.el-category {
 			display: flex;
 			flex-wrap: wrap;
@@ -93,6 +95,9 @@ header {
 					cursor: pointer;
 				}
 			}
+			.home {
+				display: none;
+			}
 		}
 		.active {
 			color: $c3 !important;
@@ -100,6 +105,9 @@ header {
 		.el-page {
 			display: none;
 			flex-wrap: wrap;
+			.back-to-category {
+				display: none;
+			}
 			li {
 				width: 50%;
 				box-sizing: border-box;
@@ -168,9 +176,9 @@ header {
 		font-size: 3rem;
 	}
 }
-.btn-main a {
-	padding: 10% 4%;
-}
+// .btn-main a {
+// 	padding: 10% 4%;
+// }
 .btn-main {
 	cursor: pointer;
 	width: 18rem;
@@ -219,37 +227,33 @@ header {
 
 }
 
-@media (max-width: 768px) {
-	.btn-main {
-		width: 14rem;
-		height: 4.2rem;
-		font-size: 1.2rem;
-	}
-	.btn-drop i {
-		width: 100% !important;
-		padding-left: 1px !important;
-	}
+@media (max-width: 600px) {
 	.btn-let-chat {
 		display: none !important;
 	}
+
+	// .btn-main {
+	// 	width: 14rem;
+	// 	height: 4.2rem;
+	// 	font-size: 1.2rem;
+	// }
+	// .btn-drop i {
+	// 	width: 100% !important;
+	// 	padding-left: 1px !important;
+	// }
+	// .btn-let-chat {
+	// 	display: none !important;
+	// }
 	.menu-ct {
-		background-color: rgba(0, 0, 0, 0.9);
 		.el-group {
-			.el-category {
-				li {
-					font-size: 3rem !important;
-				}
-			}
-			.el-page {
 				li {
 					width: 100%;
 				}
-			}
 		}
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 999px) {
 	.header {
 		height: 8.5rem;
 		padding: 2rem 0;
@@ -258,14 +262,118 @@ header {
 		padding: 0;
 		.btn-main {
 			width: 13rem;
-			height: 4.2rem;
 			font-size: 1rem;
+			height: 3rem;
 		}
 	}
 	.logo {
 		top: 36%;
 		.img {
 			width: 10rem;
+		}
+	}
+
+	.menu-ct {
+		visibility: hidden;
+		opacity: 0;
+		z-index: -1;
+		transform: translateX(100%);
+		transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+		transition-delay: 0.5s;
+	}
+
+	.close-menu.menu-ct{
+		transform: translateX(100%) !important;
+	}
+
+	.menu-ct {
+		width: 100%;
+		position: absolute;
+		color: $c3;
+		height: 100vh !important;
+		background-color: rgba(255, 255, 255, 0.85);
+		width: 100% !important;
+		display: flex;
+		justify-content: end;
+		.ic-close {
+			display: block;
+			position: absolute;
+			top: 5%;
+			left: 2.5rem;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			img {
+				width: 25px;
+				height: 25px;
+			}
+		}
+		.on-our-work {
+			display: flex !important;
+			transition: ease-in-out 2s !important;
+			li {
+				white-space: nowrap;
+			}
+		}
+		.el-group {
+			height: 100vh;
+			width: 75% !important;
+			color: $c3;
+			margin: 0 !important;
+			background-color: #fff;
+			margin: 0 auto;
+			display: flex;
+			.el-category {
+				margin-left: 2.7rem !important;
+				display: block;
+				margin-top: 3rem !important;
+				.home {
+					display: block;
+				}
+				li{
+					width: 100%;
+					box-sizing: border-box;
+					font-size: 1.6rem !important;
+					font-weight: bold;
+					display: inline-block;
+					margin-top: 2.6rem;
+					&:hover {
+						color: $c3;
+						cursor: pointer;
+					}
+				}
+			}
+			.active {
+				color: $c3 !important;
+			}
+			.el-page {
+				&.active-el-page {
+					display: block !important;
+				}
+				flex-wrap: initial;
+				margin-top: 3rem !important;
+				margin-left: 2.7rem !important;
+				.back-to-category {
+					display: block;
+					color: #000;
+				}
+				li {
+					width: 100%;
+					box-sizing: border-box;
+					font-size: 1.6rem;
+					display: flex;
+					align-items: center;
+					margin-top: 2.6rem;
+					font-weight: bold;
+					a {
+						&:hover {
+							border-bottom: 1px solid $c2;
+							cursor: pointer;
+							white-space: nowrap;
+						}
+					}
+				}
+				
+			}
 		}
 	}
 

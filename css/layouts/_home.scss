@@ -547,7 +547,7 @@ video {
             h1 {
                 font-weight: bold;
                 font-size: 4.8rem;
-                width: 30%;
+                width: 55%;
                 line-height: 117.4%;
             }
         }
@@ -609,16 +609,17 @@ video {
     }
     .content-banner {
         h1 {
-            font-size: 3.8rem;
+            font-size: 2.4rem;
             width: auto;
             padding: 0;
         }
         p {
             width: auto;
             padding: 0;
+            margin-top: 1rem;
         }
         .btn-about {
-            margin-top: 0rem;
+            margin-top: 2rem;
         }
     }
     .ct-concert {
@@ -650,7 +651,40 @@ video {
 }
 
 @media (max-width: 990px) {
+    .btn-let-chat {
+        margin-right: 1.5rem !important;
+    }
+    .ct-product  {
+        margin-top: 5rem;
+        h1 {
+            font-size: 2.4rem !important;
+        }
+    }
+    .ct-client  {
+        h1 {
+            font-size: 2.4rem !important;
+        }
+    }
+    .ct-concert  {
+        h1 {
+            font-size: 2.4rem !important;
+        }
+    }
 
+    .btn-main {
+        height: 3rem;
+        padding: 0 1.5rem !important;
+        width: auto;
+    }
+
+    .ct-more {
+        span {
+            font-size: 2rem !important;
+        }
+        i {
+            font-size: 3rem !important;
+        }
+    }
     .main-content {
         .group-el {
             
@@ -683,176 +717,11 @@ video {
     }
 }
 
-@media (max-width: 760px) {
+
+@media (max-width: 768px) {
     .wrap {
         margin: 1.2rem;
     }
-    h1 {
-        font-size: 3rem !important;
-    }
-    .content-banner h1 {
-        width: 100% !important;
-    }
-    .menu-ct {
-        .el-category {
-            width: 100%;
-        }
-    }
-    .container-home {
-        padding: 0 2.4rem;
-    }
-    .content-banner {
-        h1 {
-            font-size: 3rem !important;
-        }
-    }
-    .title   {
-        margin-top: 4rem !important;
-        margin-bottom: 2rem !important;
-    }
-    .ct-product {
-        h1 {
-            font-size: 1.4rem !important;
-            margin-bottom: 0 !important;
-        }
-        .ct {
-            .item {
-                margin-right: 2rem;
-                img {
-                    width: 60% !important;
-                }
-            }
-            .img-icon {
-                display: block;
-                height: 8rem !important;
-                line-height: 8rem !important;
-            }
-            .learn-more {
-                background-color: #fff;
-                color: black;
-                font-size: 13px;
-                border-bottom: 1px solid black;
-                display: inline-block;
-                padding: 0.2rem 0.1rem 0 0.1rem;
-                &:hover {
-                    cursor: pointer;
-                    border-bottom: 1px solid $c3;
-                }
-            }
-        }
-        margin-top: 4rem !important;
-        margin-bottom: 2rem !important;
-        h1 {
-            margin-bottom: 2.5rem;
-        }
-    }
-    .learn-more {
-        .ct {
-            width: 38.9rem !important;
-            padding: 3rem 0;
-            h1 {
-                font-size: 4.8rem;
-                font-weight: bold;
-                
-            }
-            button {
-                color: $c2;
-            }
-        }
-    }
-    .content-banner {
-        h1 {
-            width: 70%;
-            padding: 0;
-        }
-        img {
-            width: 60%;
-        }
-        p {
-            margin-top: 1rem !important;
-        }
-    }
-
-    .content-banner-color {
-        h1 {
-            margin-bottom: 2.2rem !important;
-            font-size: 1.4rem !important;
-        }
-        p {
-            font-size: 1rem !important;
-            margin-bottom: 3.6rem !important;
-            line-height: 196.9% !important;
-        }
-    }
-    .content-banner .btn-about {
-        text-align: center !important;
-    }
-
-    .main-content {
-        .group-el {
-            
-            .item {
-                &:nth-child(n + 2) {
-                    margin-left: 0.2rem;
-                }
-                height: 30rem !important;
-                > .img {
-                    height: 30rem;
-                    img {
-                        height: 30rem;
-                        width: 100%;
-                    }
-                }
-                .ct {
-                    h1 {
-                        font-size: 1.8rem !important;
-                        width: 6rem;
-                        margin-top: -3rem;
-                    }
-                    img {
-                        width: 8rem !important;
-                    }
-                }
-                &:hover {
-                    width: 60.3rem !important;
-                    > .img {
-                        width: 60.3rem !important;
-                        height: 30rem !important;
-                        img {
-                            height: 30rem;
-                            width: 100%;
-                        }
-                    }
-                    .ct {
-                        top: 80%;
-                        left: 30%;
-                    }
-                }
-            }
-            &:hover .item:not(:hover) {
-                width: 16rem !important;
-                height: 30rem !important;
-                > .img {
-                    height: 30rem;
-                    img {
-                        height: 30rem;
-                        width: 100%;
-                    }
-                }
-                .ct {
-                    display: none !important;
-                    top: 90%;
-                    left: 50%;
-                    .fix-padding {
-                        margin-left: -1rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 600px) {
     #watch-video {
         display: block !important;
         height: 3.3rem !important;
@@ -883,18 +752,36 @@ video {
     }
     .main-content .ct-concert {
         span {
-            font-size: 1rem;
+            font-size: 2.2rem;
         }
         h1 {
-            font-size: 1.4rem !important;
+            font-size: 2.2rem !important;
         }
     } 
     .slick-list .slick-slide {
         margin: 0 2.5rem !important;
     }
     .ct-client {
+        .title {
+            margin-top: 7rem !important;
+            margin-bottom: 2.5rem !important;
+        }
         h1 {
-            font-size: 1.4rem !important;
+            font-size: 2.2rem !important;
+        }
+    }
+    .ct-product {
+        h1 {
+            margin-bottom: 0rem !important;
+            font-size: 2.2rem !important;
+        }
+        .ct {
+            .item {
+                margin-right: 3rem !important;
+                .img-icon {
+                    height: 13rem !important;
+                }
+            }
         }
     }
     .ct-client .slick-list .slick-slide img {
@@ -918,7 +805,7 @@ video {
     .home-banner-color {
         .content-banner-color {
             h1 {
-                font-size: 1.4rem !important;
+                font-size: 2.2rem !important;
             }
         }
         .img {
@@ -945,14 +832,17 @@ video {
         }
         .content-banner {
             .btn-about {
-                margin-top: 1rem;
                 margin-right: 0rem !important;
+                text-align: center !important;
+                margin-top: 5rem !important;
             }
             h1 {
                 width: 100%;
             }
             p {
-                line-height: 140%;
+                line-height: 196.9%;
+                font-size: 1.4rem !important;
+                margin-top: 2rem !important;
             }
         } 
     }
@@ -974,9 +864,9 @@ video {
             display: block;
             align-items: center;
             .item {
-                height: 33%;
+                height: 33.333333333%;
                 span {
-                    font-size: 1.4rem !important;
+                    font-size: 2.2rem !important;
                 }
                 i {
                     font-size: 2.5rem !important;
@@ -1004,11 +894,13 @@ video {
     }
 
     .btn-main {
-        width: auto !important;
-        padding: 0 1rem !important;
-        height: 2.6rem;
+        height: 3rem;
         font-size: 1rem !important;
         border-radius: 50px !important;
+        width:auto;
+        white-space: nowrap;
+        padding: 0 1.5rem;
+        text-align: center;
     }
 
     .btn-about {
@@ -1131,6 +1023,42 @@ video {
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content .ct-concert {
+        span {
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 1.4rem !important;
+        }
+    } 
+    .ct-client .title h1 {
+        font-size: 1.4rem !important;
+    }
+
+    .ct-product h1 {
+        font-size: 1.4rem !important;
+    }
+
+    .ct-more .ct .item .el span {
+        font-size: 1.4rem !important;
+    }
+
+    .main-content .group-el .item .ct h1 {
+        font-size: 1.4rem !important;
+    }
+
+    .home-banner-color .content-banner
+    {
+        h1 {
+            font-size: 1.4rem !important;
+        }
+        p {
+            font-size: 1rem !important;
         }
     }
 }

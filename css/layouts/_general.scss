@@ -14,12 +14,12 @@ html{
     // @media (max-width: 1600px) {
     //     font-size: 54%;
     // }
-    // @media (max-width: 1450px) {
-    //     font-size: 54%;
-    // }
-    // @media (max-width: 1200px) {
-    //     font-size: 54%;
-    // }
+    @media (max-width: 1250px) {
+        font-size: 60%;
+    }
+    @media (max-width: 999px) {
+        font-size: 62.5%;
+    }
 }
 .wrap {
     overflow: hidden;
