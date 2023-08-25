@@ -1185,6 +1185,8 @@ header.scroll {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-shadow: 5px 5px 10px rgb(0, 0, 0);
+            box-shadow: 5px 5px 10px rgb(0, 0, 0);
   }
   .menu-ct .el-group .el-category {
     margin-left: 2.7rem !important;
