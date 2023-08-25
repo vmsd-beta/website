@@ -288,9 +288,9 @@ header {
 
 	.menu-ct {
 		width: 100%;
-		position: absolute;
 		color: $c3;
 		height: 100vh !important;
+		position: fixed;
 		background-color: rgba(255, 255, 255, 0.85);
 		width: 100% !important;
 		display: flex;

@@ -1140,9 +1140,9 @@ header.scroll {
   }
   .menu-ct {
     width: 100%;
-    position: absolute;
     color: #FF6C0E;
     height: 100vh !important;
+    position: fixed;
     background-color: rgba(255, 255, 255, 0.85);
     width: 100% !important;
     display: -webkit-box;

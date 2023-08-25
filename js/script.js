@@ -591,6 +591,7 @@ jQuery(function ($) {
     $(document).ready(function () {
         $('.ic-close').on('click', function(){
             $('.menu-ct').addClass('close-menu');
+            $(body).css({'overflow':'auto'});
         });
 
         if (window.innerWidth >= 999) {
@@ -627,6 +628,7 @@ jQuery(function ($) {
         } else {
             $(".btn-drop").on('click',function () {
                 $('.menu-ct').removeClass('close-menu');
+                $(body).css({'overflow':'hidden'});
             });
 
             $(".our-work").on('click', function () {
