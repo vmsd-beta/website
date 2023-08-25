@@ -2267,6 +2267,7 @@ video {
   .ct-more .ct .item i {
     font-size: 2.5rem !important;
     margin-right: 2rem !important;
+    color: black !important;
   }
   .ct-more i {
     font-size: 2rem !important;
@@ -2959,6 +2960,7 @@ video {
   }
   .learn-more i {
     font-size: 3rem !important;
+    color: black !important;
   }
   .ct-main-group .el-group .ct {
     margin: 4rem !important;
