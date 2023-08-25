@@ -2427,6 +2427,9 @@ video {
   .main-content .ct-concert h1 {
     font-size: 1.4rem !important;
   }
+  .content-banner h1 {
+    white-space: initial !important;
+  }
   .ct-client .title h1 {
     font-size: 1.4rem !important;
   }
@@ -2999,11 +3002,13 @@ video {
   .ask .form input {
     height: 3.2rem;
     border: 1px solid #FF6C0E;
+    font-size: 1.2rem !important;
   }
   .ask .form textarea {
     border: 1px solid #FF6C0E;
     height: 15rem;
     margin-bottom: 1.5rem;
+    font-size: 1.2rem !important;
   }
   .col-lg-8 {
     max-width: 100%;
