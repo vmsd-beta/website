@@ -522,6 +522,24 @@
 }
 
 @media (max-width: 600px) {
+    .ct-main-group .el-group .ct .item-2 .next {
+        font-size: 4rem !important;
+        right: -5%;
+    }
+    .slick-dots {
+        margin-top: 1rem !important;
+        li {
+            width: 0.5rem !important;
+            height: 0.5rem !important;
+        }
+    }
+    .ct-main-group .el-group .ct .item-2 .prev {
+        font-size: 4rem !important;
+        left: 0%;
+    }
+    .slick-list .slick-slide {
+        margin: 0 2px !important;
+    }
     .content-banner {
         img {
             width: 10rem !important;
@@ -544,7 +562,7 @@
             margin: 4rem auto !important;
         }
         h1 {
-            width: 65%;
+            width: 80%;
             margin: 2rem auto;
             font-size: 2.2rem !important;
         }
