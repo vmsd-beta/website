@@ -240,6 +240,7 @@
                         }
                         span {
                             font-size: 1.4rem;
+                            display: block;
                             line-height: 108.4%;
                             filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
                         }
@@ -387,7 +388,7 @@
     }
 }
 
-@media (max-width: 986px) {
+@media (max-width: 999px) {
     .ct-main-group {
         .el-group {
             .ct {
@@ -469,6 +470,9 @@
                             h1 {
                                 font-size: 1.9rem !important;
                             }
+                            span {
+                                font-size: 1.3rem !important;
+                            }
                         }
                     }
                 }
@@ -517,6 +521,9 @@
                             left: 50% !important;
                             h1 {
                                 font-size: 2rem !important;
+                            }
+                            span {
+                                font-size: 1.3rem;
                             }
                         }
                     }
@@ -616,7 +623,6 @@
     .expert .el-group .ct-group .ct .el .info span {
         font-size: 1.2rem !important;
         white-space: inherit;
-        line-height: 0 !important;
     }
 
     .des {

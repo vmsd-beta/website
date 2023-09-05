@@ -2699,6 +2699,7 @@ video {
 }
 .expert .el-group .ct-group .ct .el .info span {
   font-size: 1.4rem;
+  display: block;
   line-height: 108.4%;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
@@ -2796,7 +2797,7 @@ video {
     width: 98%;
   }
 }
-@media (max-width: 986px) {
+@media (max-width: 999px) {
   .ct-main-group .el-group .ct {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -2878,6 +2879,9 @@ video {
   .expert .el-group .ct-group .ct .el .info h1 {
     font-size: 1.9rem !important;
   }
+  .expert .el-group .ct-group .ct .el .info span {
+    font-size: 1.3rem !important;
+  }
 }
 @media (max-width: 768px) {
   .ct-main-group .el-group .ct .item-1 h1 {
@@ -2924,6 +2928,9 @@ video {
   }
   .expert .el-group .ct-group .ct .el .info h1 {
     font-size: 2rem !important;
+  }
+  .expert .el-group .ct-group .ct .el .info span {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 600px) {
@@ -3002,7 +3009,6 @@ video {
   .expert .el-group .ct-group .ct .el .info span {
     font-size: 1.2rem !important;
     white-space: inherit;
-    line-height: 0 !important;
   }
   .des {
     margin-top: 6.5rem;
