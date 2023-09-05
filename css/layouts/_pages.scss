@@ -205,11 +205,11 @@
     .el-group {
         display: flex;
         position: absolute;
-        top: 80%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
         justify-content: space-around;
-        width: 90%;
+        width: 85%;
         margin: 0px auto;
         .ct-group {
             > .img {
@@ -228,6 +228,7 @@
                     }
                     .info {
                         position: absolute;
+                        width: 93%;
                         left: 0%;
                         top: 85%;
                         transform: translate(-50%, -50%);
@@ -239,7 +240,6 @@
                         }
                         span {
                             font-size: 1.4rem;
-                            white-space: nowrap;
                             line-height: 108.4%;
                             filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
                         }
@@ -297,8 +297,8 @@
 }
 
 .ask {
-    margin-bottom: 18.2rem;
-    margin-top: 41rem;
+    margin-bottom: 11.2rem;
+    margin-top: 21rem;
     h1 {
         text-align: center;
         font-size: 4.8rem;
@@ -334,6 +334,12 @@
         .btn-submit {
             text-align: center;
         }
+    }
+}
+
+@media (max-width: 1300px) {
+    .expert .el-group .ct-group .ct .el .info h1 {
+        font-size: 1.9rem;
     }
 }
 
@@ -461,7 +467,7 @@
                         .info {
                             left: 50% !important;
                             h1 {
-                                font-size: 3rem !important;
+                                font-size: 1.9rem !important;
                             }
                         }
                     }
@@ -510,7 +516,7 @@
                         .info {
                             left: 50% !important;
                             h1 {
-                                font-size: 3rem !important;
+                                font-size: 2rem !important;
                             }
                         }
                     }
@@ -600,13 +606,17 @@
 
     .expert .el-group .ct-group .ct .el .info {
         width: 85% !important;
+        top: 80% !important;
         h1 {
-            font-size: 2rem !important;
+            font-size: 1.8rem !important;
         }
     }
+
+
     .expert .el-group .ct-group .ct .el .info span {
-        font-size: 1.3rem !important;
+        font-size: 1.2rem !important;
         white-space: inherit;
+        line-height: 0 !important;
     }
 
     .des {

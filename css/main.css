@@ -2652,13 +2652,13 @@ video {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 90%;
+  width: 85%;
   margin: 0px auto;
 }
 .expert .el-group .ct-group {
@@ -2685,6 +2685,7 @@ video {
 }
 .expert .el-group .ct-group .ct .el .info {
   position: absolute;
+  width: 93%;
   left: 0%;
   top: 85%;
   -webkit-transform: translate(-50%, -50%);
@@ -2698,7 +2699,6 @@ video {
 }
 .expert .el-group .ct-group .ct .el .info span {
   font-size: 1.4rem;
-  white-space: nowrap;
   line-height: 108.4%;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
@@ -2742,8 +2742,8 @@ video {
 }
 
 .ask {
-  margin-bottom: 18.2rem;
-  margin-top: 41rem;
+  margin-bottom: 11.2rem;
+  margin-top: 21rem;
 }
 .ask h1 {
   text-align: center;
@@ -2786,6 +2786,11 @@ video {
   text-align: center;
 }
 
+@media (max-width: 1300px) {
+  .expert .el-group .ct-group .ct .el .info h1 {
+    font-size: 1.9rem;
+  }
+}
 @media (max-width: 1250px) {
   .ct-main-group .el-group .ct .item-1 span {
     width: 98%;
@@ -2871,7 +2876,7 @@ video {
     left: 50% !important;
   }
   .expert .el-group .ct-group .ct .el .info h1 {
-    font-size: 3rem !important;
+    font-size: 1.9rem !important;
   }
 }
 @media (max-width: 768px) {
@@ -2918,7 +2923,7 @@ video {
     left: 50% !important;
   }
   .expert .el-group .ct-group .ct .el .info h1 {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
 }
 @media (max-width: 600px) {
@@ -2989,13 +2994,15 @@ video {
   }
   .expert .el-group .ct-group .ct .el .info {
     width: 85% !important;
+    top: 80% !important;
   }
   .expert .el-group .ct-group .ct .el .info h1 {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
   }
   .expert .el-group .ct-group .ct .el .info span {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
     white-space: inherit;
+    line-height: 0 !important;
   }
   .des {
     margin-top: 6.5rem;
