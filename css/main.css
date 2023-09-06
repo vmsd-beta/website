@@ -2928,6 +2928,7 @@ video {
   }
   .expert .el-group .ct-group .ct .el .info h1 {
     font-size: 2rem !important;
+    line-height: 100%;
   }
   .expert .el-group .ct-group .ct .el .info span {
     font-size: 1.3rem;
