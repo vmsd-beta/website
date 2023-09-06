@@ -259,22 +259,22 @@
             <div id="ask"></div>
 
             <section class="ask container">
-                <h1>Ask us anything</h1>
-                <form action="" class="form col-lg-8">
+                <h1 id="my-form-status">Ask us anything</h1>
+                <form class="form col-lg-8" id="my-form" action="https://formspree.io/f/xeqbkpla" method="POST">
                     <div class="el">
                         <label>Display Name*</label>
-                        <input type="text">
+                        <input type="text" name="display_name">
                     </div>
                     <div class="el">
                         <label>Email*</label>
-                        <input type="text">
+                        <input type="text" name="email">
                     </div>
                     <div class="el">
                         <label>Message*</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
                     </div>
                     <div class="btn-submit">
-                        <button class="btn btn-main">SUBMIT</button>
+                        <button class="btn btn-main" id="my-form-button">SUBMIT</button>
                     </div>
                 </form>
             </section>
@@ -443,6 +443,38 @@
         });
 
         $('.acc').hc_accordion();
+
+        // this is the id of the form
+        var form = document.getElementById("my-form");
+    
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
     </script>
 </body>
 
