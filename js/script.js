@@ -777,9 +777,43 @@ jQuery(function ($) {
         }
     }
 
+    function initSlider() {
+        if (!$('.cas-multi-client').hasClass('slick-initialized')) {
+            if ($('.cas-multi-client').length) {
+                $('.cas-multi-client').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    dots: false,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 2500,
+                    swipeToSlide: true,
+                    infinite: true,
+                    speed: 1000,
+                    responsive: [
+                        {
+                            breakpoint: 1599,
+                            settings: {
+                                slidesToShow: 5,
+                            }
+                        },
+                        {
+                            breakpoint: 1199,
+                            settings: {
+                                slidesToShow: 4,
+                            }
+                        },
+                    ],
+                })
+            }
+        }
+      }
+
     function checkWindowSize() {
         if ($(window).width() < 760) {
             destroySlider();
+        } else {
+            initSlider();
         }
     }
 
