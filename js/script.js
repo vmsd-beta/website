@@ -677,7 +677,7 @@ jQuery(function ($) {
         function showHeader() {
                 $('.btn-let-chat').show();
                 $('.logo').show();
-                if ($(this).scrollTop() > 0) {
+                if ($(window).scrollTop() > 0) {
                     hideHeader();
                 } else {
                     showHeader();
@@ -820,6 +820,13 @@ jQuery(function ($) {
     function checkWidth() {
         if ($(window).width() < 760) {
             // Attach click event to the document
+            document.getElementById('video-home').removeAttribute('autoplay');
+            document.getElementById('video-home').removeAttribute('playsinline');
+            setTimeout(() => {
+                document.getElementById('video-home').pause();
+            }, 500);
+            
+
             $('#watch-video').on('click', function() {
                 // Play the video
                 document.getElementById('video-home').play();
