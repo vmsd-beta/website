@@ -263,11 +263,11 @@
                 <form class="form col-lg-8" id="my-form" action="https://formspree.io/f/xeqbkpla" method="POST">
                     <div class="el">
                         <label>Display Name*</label>
-                        <input type="text" name="display_name">
+                        <input type="text" name="display_name" value="" id="name-id">
                     </div>
                     <div class="el">
                         <label>Email*</label>
-                        <input type="text" name="email">
+                        <input type="email" name="email" id="email-id" value="" />
                     </div>
                     <div class="el">
                         <label>Message*</label>
@@ -451,6 +451,10 @@
           event.preventDefault();
           var status = document.getElementById("my-form-status");
           var data = new FormData(event.target);
+
+          data.set('email', $("#email-id").val());
+          data.set('name', $("#name-id").val());
+          
           fetch(event.target.action, {
             method: form.method,
             body: data,
@@ -459,7 +463,7 @@
             }
           }).then(response => {
             if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
+              status.innerHTML = "Thank you for reaching out to VMSD! We will be in touch soon.";
               form.reset()
             } else {
               response.json().then(data => {
