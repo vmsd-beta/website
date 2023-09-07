@@ -824,18 +824,14 @@ jQuery(function ($) {
         });
     }
 
-    $(document).ready(function() {
-        playVideo();
-    })
-
     function checkWidth() {
         if ($(window).width() < 760) {
             // Attach click event to the document
-            document.getElementById('video-home').removeAttribute('autoplay');
-            document.getElementById('video-home').removeAttribute('playsinline');
+            // document.getElementById('video-home').removeAttribute('autoplay');
+            // document.getElementById('video-home').removeAttribute('playsinline');
             setTimeout(() => {
                 document.getElementById('video-home').pause();
-            }, 500);
+            }, 1500);
             
 
             $('#watch-video').on('click', function() {
@@ -844,6 +840,8 @@ jQuery(function ($) {
                 // Remove the click event to prevent multiple plays
                 $(document).off('click');
             });
+        } else {
+            playVideo();
         }
     }
 
