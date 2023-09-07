@@ -817,6 +817,17 @@ jQuery(function ($) {
         }
     }
 
+    function playVideo() {
+        document.getElementById('video-home').addEventListener('loadedmetadata', function() {
+            // Bắt đầu phát video sau khi metadata đã được tải xong
+            document.getElementById('video-home').play();
+        });
+    }
+
+    $(document).ready(function() {
+        playVideo();
+    })
+
     function checkWidth() {
         if ($(window).width() < 760) {
             // Attach click event to the document
