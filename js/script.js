@@ -826,22 +826,23 @@ jQuery(function ($) {
 
     function checkWidth() {
         if ($(window).width() < 760) {
+            $('.thumbnail-video').show();
             // Attach click event to the document
-            // document.getElementById('video-home').removeAttribute('autoplay');
-            // document.getElementById('video-home').removeAttribute('playsinline');
-            setTimeout(() => {
-                document.getElementById('video-home').pause();
-            }, 1500);
+            document.getElementById('video-home').removeAttribute('autoplay');
+            document.getElementById('video-home').removeAttribute('playsinline');
+            document.getElementById('video-home').pause();
             
 
             $('#watch-video').on('click', function() {
                 // Play the video
                 document.getElementById('video-home').play();
+                $('.thumbnail-video').hide();
                 // Remove the click event to prevent multiple plays
                 $(document).off('click');
             });
         } else {
             playVideo();
+            $('.thumbnail-video').hide();
         }
     }
 
