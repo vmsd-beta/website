@@ -677,7 +677,7 @@ jQuery(function ($) {
         function showHeader() {
                 $('.btn-let-chat').show();
                 $('.logo').show();
-                if ($(this).scrollTop() > 0) {
+                if ($(window).scrollTop() > 0) {
                     hideHeader();
                 } else {
                     showHeader();
@@ -817,15 +817,32 @@ jQuery(function ($) {
         }
     }
 
+    function playVideo() {
+        document.getElementById('video-home').addEventListener('loadedmetadata', function() {
+            // Bắt đầu phát video sau khi metadata đã được tải xong
+            document.getElementById('video-home').play();
+        });
+    }
+
     function checkWidth() {
         if ($(window).width() < 760) {
+            $('.thumbnail-video').show();
             // Attach click event to the document
+            document.getElementById('video-home').removeAttribute('autoplay');
+            document.getElementById('video-home').removeAttribute('playsinline');
+            document.getElementById('video-home').pause();
+            
+
             $('#watch-video').on('click', function() {
                 // Play the video
                 document.getElementById('video-home').play();
+                $('.thumbnail-video').hide();
                 // Remove the click event to prevent multiple plays
                 $(document).off('click');
             });
+        } else {
+            playVideo();
+            $('.thumbnail-video').hide();
         }
     }
 

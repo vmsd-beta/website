@@ -2154,11 +2154,19 @@ video {
     height: 100%;
     display: block;
     overflow: hidden;
+    z-index: 1;
   }
   .video .source {
     top: 0;
     left: 0;
     width: 226%;
+    height: 100%;
+    position: absolute;
+  }
+  .video .thumbnail-video img {
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     position: absolute;
   }
