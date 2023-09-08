@@ -1,0 +1,202 @@
+footer {
+    height: auto;
+    background: #55575A;
+    section {
+        display: flex;
+        justify-content: space-between;
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        // gap: 7.5rem; 
+        // .el:nth-child(2) {
+        //     grid-column: span 2;
+        // }
+        .el {
+            margin-top: 4.2rem;
+            .ct-group {
+                display: flex;
+                justify-content: space-between;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            h1 {
+                white-space: nowrap;
+                font-size: 1.5rem;
+                font-weight: bold;
+                height: 2.6rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            .social {
+                margin: 2.6rem 0;
+                img {
+                    height: 2.5rem;
+                    width: 2.5rem;
+                }
+            }
+            .ct {
+                margin-bottom: 2.6rem;
+                span {
+                    font-size: 1rem;
+                    display: block;
+                    white-space: nowrap;
+                    p {
+                        font-weight: bold;
+                    }
+                }
+                h2 {
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                }
+                img {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .quick-link {
+
+            .ct {
+                margin-top: 1.3rem;
+                span {
+                    height: 2.6rem;
+                    line-height: 2.6rem;
+                    white-space: nowrap;
+                    a {
+                        padding: 2px;
+                        &:hover {
+                            border-bottom: 1px solid $c2;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    color: $c2;
+}
+@media (max-width: 1200px) {
+    .el {
+        .el-group {
+            .ct-group {
+                display: block;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    footer {
+        *, ::after, ::before {
+            box-sizing:initial !important;
+        }
+        .el {
+            .el-group {
+                .ct-group {
+                    display: block;
+                }
+            }
+        }
+        // .container {
+        //     margin: 0 auto !important;
+
+        // }
+        // .container-home {
+        //     margin: 0 auto !important;
+        // }
+
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        *, ::after, ::before {
+            box-sizing: border-box !important;
+        }
+        height: auto;
+        section {
+            display: block;
+            padding-bottom: 7.2rem !important;
+            padding-top: 3.6rem !important;
+            .el:not(:last-child) {
+                &:hover {
+                    cursor: pointer;
+                }
+                margin-top: 0;
+                h1 {
+                    font-size: 1.3rem !important;
+                    border-bottom: 1px solid gray;
+                    width:100%;
+                    padding: 1rem 0;
+                    height: auto;
+                    position: relative;
+                    .el-group {
+                        transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+                        transition-delay: 0.5s;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 60%;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 4px 4px 0 4px; /* Điều chỉnh giá trị 10px tùy theo kích thước bạn muốn */
+                        border-color: $c2 transparent transparent transparent; /* Điều chỉnh màu sắc tùy ý */
+                        transform: translate(-50%, -100%);
+                    }
+                }
+                h2 {
+                    font-size: 1rem;
+                }
+                span {
+                    font-size: 1rem !important;
+                }
+                .ct-group {
+                    display: block;
+                }
+                // .el-group {
+                //     // display: none;
+                //     height: 0;
+                //     overflow: hidden;
+                //     transition: all 0.7s ease-in-out 1s, visibility 0.5s linear 0.5s, z-index 0s linear 0.5s;
+                //     transition-delay: 0.5s;
+                // }
+            }
+            .el:last-child {
+                text-align: center;
+                h1 {
+                    font-size: 1.3rem !important;
+                }
+                img {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                span {
+                    font-size: 1rem;
+                }
+            }
+            .el {
+                h1 {
+                    margin-bottom: 1rem;
+                }
+                .social {
+                    margin: 0;
+                    padding-bottom: 0 !important;
+                }
+                .ct {
+                    margin-bottom: 0 !important;
+                    img {
+                        margin: 1rem 0.5rem;
+                    }
+                    padding-bottom: 2rem;
+                }
+            }
+            .quick-link {
+                margin-left: 0;
+            }
+        }
+    }
+}
