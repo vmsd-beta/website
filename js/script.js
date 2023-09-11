@@ -818,10 +818,13 @@ jQuery(function ($) {
     }
 
     function playVideo() {
-        document.getElementById('video-home').addEventListener('loadedmetadata', function() {
-            // Bắt đầu phát video sau khi metadata đã được tải xong
-            document.getElementById('video-home').play();
-        });
+        const video =  document.getElementById('video-home');
+        if (video) {
+            document.getElementById('video-home').addEventListener('loadedmetadata', function() {
+                // Bắt đầu phát video sau khi metadata đã được tải xong
+                document.getElementById('video-home').play();
+            });
+        }
     }
 
     function checkWidth() {
