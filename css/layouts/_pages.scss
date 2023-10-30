@@ -264,11 +264,6 @@
                         margin: 0px auto;
                         width: 100%;
                     }
-                    // .img-bg {
-                    //     opacity: 1;
-                    //     width: 100%;
-                    //     background-blend-mode: multiply;
-                    // }
         
                     &:hover {
                         .info {
@@ -285,6 +280,26 @@
                             height: 100%;
                             mix-blend-mode: multiply;
                             background-image: url('../images/bg-expert.png');
+                            background-size: cover;
+                        }
+                    }
+                }
+                .el-remove {
+                    &:hover {
+                        .info {
+                            opacity: 1;
+                            transition: 1s ease-in-out;
+                            left: 50%;
+                            text-align: start;
+                        }
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            mix-blend-mode: multiply;
+                            background-image: none !important;
                             background-size: cover;
                         }
                     }
