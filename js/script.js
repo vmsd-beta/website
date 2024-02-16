@@ -820,6 +820,7 @@ jQuery(function ($) {
             speed: 1000,
             cssEase: 'linear',
             rtl: false,
+            variableWidth: true,
             responsive: [
                 {
                     breakpoint: 1599,

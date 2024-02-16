@@ -1774,12 +1774,27 @@ video {
 .ct-recent-project .slick-list .slick-slide img {
   height: 308px;
   transition: transform .2s;
-  overflow: hidden;
 }
-
 .ct-recent-project .slick-list .slick-slide img:hover {
   transform: scale(1.1);
 }
+
+.ct-recent-project .slick-list .item {
+  width: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cas-multi-recent-project {
+  padding: 0 25px;
+}
+
+.cas-multi-recent-project .item {
+  width: 100%;
+  height: 308px;
+}
+
 .ct-recent-project .title {
   margin-top: 13rem;
   margin-bottom: 6.5rem;
@@ -2319,11 +2334,6 @@ video {
   .cas-multi-client .item img {
     height: 33px !important;
     margin-bottom: 20px;
-  }
-
-  .cas-multi-recent-project .item {
-    width: 100%;
-    height: 308px;
   }
 
   .cas-multi-recent-project .item img {
