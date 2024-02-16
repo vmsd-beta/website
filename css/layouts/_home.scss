@@ -159,7 +159,7 @@ video {
     .slick-list .slick-slide {
         margin: 0 1rem !important;
     }
-   
+
     .group-el {
         display: flex;
         justify-content: space-between;
@@ -190,7 +190,7 @@ video {
                 img {
                     cursor: pointer !important;
                     position: absolute;
-                    top: 0;                    
+                    top: 0;
                     left: 0;
                     width: 100%;
                     height: 100%;
@@ -460,7 +460,7 @@ video {
             }
         }
         }
-        
+
     }
 }
 
@@ -488,7 +488,7 @@ video {
         h1 {
             font-size: 4.8rem;
             font-weight: bold;
-            
+
         }
         button {
             color: $c2;
@@ -542,7 +542,7 @@ video {
             span {
                 font-size: 1.6rem;
                 text-transform: uppercase;
-    
+
             }
             h1 {
                 font-weight: bold;
@@ -554,7 +554,7 @@ video {
         .slick-list .slick-slide {
             margin: 0 1rem !important;
         }
-       
+
         .group-el {
             .item {
                 height: 40.6rem !important;
@@ -641,7 +641,7 @@ video {
             h1 {
                 font-size: 4.8rem;
                 font-weight: bold;
-                
+
             }
             button {
                 color: $c2;
@@ -687,7 +687,7 @@ video {
     }
     .main-content {
         .group-el {
-            
+
             .item {
                 &:nth-child(n + 2) {
                     margin-left: 0.5rem;
@@ -744,14 +744,14 @@ video {
         overflow: hidden;
         z-index: 1;
         .source {
-            top: 0; 
+            top: 0;
             left: 0;
             width: 226%;
             height: 100%;
             position: absolute;
         }
         .thumbnail-video img {
-            top: 0; 
+            top: 0;
             left: 0;
             width: 100%;
             height: 100%;
@@ -765,7 +765,7 @@ video {
         h1 {
             font-size: 2.2rem !important;
         }
-    } 
+    }
     .slick-list .slick-slide {
         margin: 0 2.5rem !important;
     }
@@ -852,7 +852,7 @@ video {
                 font-size: 1.4rem !important;
                 margin-top: 2rem !important;
             }
-        } 
+        }
     }
     .ct-more  {
         .img {
@@ -891,7 +891,7 @@ video {
 
     .cas-multi-client {
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         .item {
             flex: 0 0 calc(33.33% - 10px);
             margin: 5px;
@@ -901,7 +901,6 @@ video {
             }
         }
     }
-
     .btn-main {
         height: 3rem;
         font-size: 1rem !important;
@@ -919,7 +918,7 @@ video {
             font-size: 1rem !important;
         }
     }
-    
+
 
     .main-content {
         .group-el {
@@ -1044,7 +1043,7 @@ video {
         h1 {
             font-size: 1.4rem !important;
         }
-    } 
+    }
     .content-banner {
         h1 {
             white-space: initial !important;
