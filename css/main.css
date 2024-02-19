@@ -2132,6 +2132,9 @@ video {
   .ct-client h1 {
     font-size: 2.4rem !important;
   }
+  .ct-recent-project h1 {
+    font-size: 2.4rem !important;
+  }
   .ct-concert h1 {
     font-size: 2.4rem !important;
   }
@@ -2220,6 +2223,9 @@ video {
   }
   .ct-client h1 {
     font-size: 2.2rem !important;
+  }
+  .ct-recent-project h1 {
+    font-size: 2.4rem !important;
   }
   .ct-product h1 {
     margin-bottom: 0rem !important;
@@ -2483,6 +2489,12 @@ video {
   }
   .ct-client .title h1 {
     font-size: 1.4rem !important;
+  }
+  .ct-recent-project .title h1 {
+    font-size: 1.4rem !important;
+  }
+  .ct-recent-project .slick-list .item {
+    width: auto !important;
   }
   .ct-product h1 {
     font-size: 1.4rem !important;

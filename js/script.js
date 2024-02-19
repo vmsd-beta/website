@@ -825,13 +825,13 @@ jQuery(function ($) {
                 {
                     breakpoint: 1599,
                     settings: {
-                        slidesToShow: 5,
+                        slidesToShow: 3,
                     }
                 },
                 {
                     breakpoint: 1199,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 1,
                     }
                 },
             ],
