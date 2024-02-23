@@ -599,23 +599,23 @@ jQuery(function ($) {
                 $(".el-page-lg").addClass('on-our-work');
                 $(".our-work").addClass('active');
             });
-    
+
             $(".btn-drop").mouseenter(function () {
                 $(".el-page-lg").removeClass('on-our-work');
                 $(".our-work").removeClass('active');
                 $('.menu-ct').removeClass('close-menu');
             });
-    
+
             $(".our-team").mouseenter(function () {
                 $(".el-page-lg").removeClass('on-our-work');
                 $(".our-work").removeClass('active');
             });
-    
+
             $(".contact-us").mouseenter(function () {
                 $(".el-page-lg").removeClass('on-our-work');
                 $(".our-work").removeClass('active');
             });
-    
+
             $(".el-page-lg").mouseleave(function () {
                 $(".el-page-lg").removeClass('on-our-work');
                 $(".our-work").removeClass('active');
@@ -652,11 +652,11 @@ jQuery(function ($) {
             const targetOffset = $('#ct-concert').offset().top;
             const windowHeight = $(window).height();
             const scrollToPosition = targetOffset - (windowHeight / 4);
-        
+
             $('html, body').animate({
               scrollTop: scrollToPosition
             }, 1000);
-        
+
         });
     });
 
@@ -665,11 +665,11 @@ jQuery(function ($) {
             const targetOffset = $('#ct-concert').offset().top;
             const windowHeight = $(window).height();
             const scrollToPosition = targetOffset - (windowHeight / 4);
-        
+
             $('html, body').animate({
               scrollTop: scrollToPosition
             }, 1000);
-        
+
         });
     });
 
@@ -688,16 +688,16 @@ jQuery(function ($) {
             $('.menu-drop').on('mouseenter', function() {
                 hideHeader();
             });
-      
+
             $('.menu-drop').on('mouseleave', function() {
                 showHeader();
             });
-      
+
             // Focus
             $('#navbarSupportedContent').on('mouseenter', function() {
                 hideHeader();
             });
-      
+
             $('#navbarSupportedContent').on('mouseleave', function() {
                 showHeader();
             });
@@ -707,11 +707,11 @@ jQuery(function ($) {
             $('.btn-let-chat').hide();
             $('.logo').hide();
         }
-  
+
         // Hover
 
         const scrollMessage = $('.home-banner');
-  
+
         $(window).on('scroll', function() {
           if ($(scrollMessage).scrollTop() > 0) {
             hideHeader();
@@ -809,6 +809,34 @@ jQuery(function ($) {
         }
       }
 
+    if ($('.cas-multi-recent-project').length) {
+        $('.cas-multi-recent-project').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            speed: 1000,
+            cssEase: 'linear',
+            rtl: false,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 1599,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+            ],
+        })
+    }
     function checkWindowSize() {
         if ($(window).width() < 760) {
             destroySlider();
@@ -818,10 +846,13 @@ jQuery(function ($) {
     }
 
     function playVideo() {
-        document.getElementById('video-home').addEventListener('loadedmetadata', function() {
-            // Bắt đầu phát video sau khi metadata đã được tải xong
-            document.getElementById('video-home').play();
-        });
+        const video =  document.getElementById('video-home');
+        if (video) {
+            document.getElementById('video-home').addEventListener('loadedmetadata', function() {
+                // Bắt đầu phát video sau khi metadata đã được tải xong
+                document.getElementById('video-home').play();
+            });
+        }
     }
 
     function checkWidth() {
@@ -831,7 +862,7 @@ jQuery(function ($) {
             document.getElementById('video-home').removeAttribute('autoplay');
             document.getElementById('video-home').removeAttribute('playsinline');
             document.getElementById('video-home').pause();
-            
+
 
             $('#watch-video').on('click', function() {
                 // Play the video
@@ -865,7 +896,7 @@ jQuery(function ($) {
         asNavFor: '.slider-nav-pop-up'
     });
 
-    
+
     $('.slider-nav-pop-up').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -887,7 +918,7 @@ jQuery(function ($) {
         asNavFor: '.slider-nav-expo'
     });
 
-    
+
     $('.slider-nav-expo').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
