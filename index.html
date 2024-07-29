@@ -486,6 +486,7 @@
             method: "GET"
         })
             .then(response => response.json())
+
             .then(json => {
                 if (!json.success)
                     throw new Error(json.message)
@@ -493,11 +494,11 @@
                 const { title, timerelease, image } = json.data.records[0];
                 const titleElement = document.querySelector('.ct-news .bg-container .news-content .news-right h2');
                 const timeElement = document.querySelector('.ct-news .bg-container .news-content .news-right span');
-                const imageLarg = document.querySelector('.ct-news .bg-container .bg-img');
+                const bgImg = document.querySelector('.ct-news .bg-container .bg-img');
                 const time = moment(timerelease).format('MMMM, YYYY');
                 titleElement.innerHTML = title;
                 timeElement.innerHTML = `${time}`;
-                imageLarg.src = image;
+                bgImg.src = image;
             })
             .catch((error) => {
                 alert(error.message)
