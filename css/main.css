@@ -1774,7 +1774,7 @@ video {
 .ct-news .bg-container .news-content .news-right h2 {
   font-size: 3.2rem;
   font-weight: bold;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 .ct-news .bg-container .news-content .news-left {
   width: 25%;
@@ -2182,7 +2182,7 @@ video {
     font-size: 2.4rem !important;
   }
   .ct-news .bg-container .news-content .news-right h2 {
-    font-size: 2.4rem !important;
+    font-size: 2rem !important;
   }
   .ct-recent-project h1 {
     font-size: 2.4rem !important;
@@ -2280,7 +2280,7 @@ video {
     font-size: 2.2rem !important;
   }
   .ct-news .bg-container .news-content .news-right h2 {
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
   }
   .ct-recent-project h1 {
     font-size: 2.4rem !important;
@@ -2553,6 +2553,12 @@ video {
   }
   .ct-news .title h1 {
     font-size: 1.4rem !important;
+  }
+  .ct-news .bg-container .news-content .news-right h2 {
+    font-size: 1.2rem !important;
+  }
+  .ct-news .bg-container .news-content .news-right span {
+    font-size: 1rem !important;
   }
   .ct-recent-project .title h1 {
     font-size: 1.4rem !important;
@@ -3191,4 +3197,36 @@ video {
   .col-lg-8 {
     max-width: 100%;
   }
+}
+
+.news {
+  margin: 0 auto;
+  margin-top: 12.5rem;
+}
+.news h1 {
+  margin: 5.6rem 0;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.news span {
+  margin-top: 6.1rem;
+  margin-bottom: 7.1rem;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+}
+.news-img-detail {
+  margin-bottom: 5.5rem;
+  width: 100%;
+}
+.news-paragraph {
+  margin-bottom: 14.4rem;
+}
+.news-paragraph p {
+  font-size: 2.4rem;
+  line-height: 4.368rem;
+}
+.news-paragraph .news-img-paragraph {
+  margin-top: 11rem;
 }
