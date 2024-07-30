@@ -1774,7 +1774,7 @@ video {
 .ct-news .bg-container .news-content .news-right h2 {
   font-size: 3.2rem;
   font-weight: bold;
-  /*white-space: nowrap;*/
+  white-space: nowrap;
 }
 .ct-news .bg-container .news-content .news-left {
   width: 25%;
@@ -3224,9 +3224,22 @@ video {
   margin-bottom: 14.4rem;
 }
 .news-paragraph p {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   line-height: 4.368rem;
 }
-.news-paragraph .news-img-paragraph {
-  margin-top: 11rem;
+.news-paragraph p p img {
+  margin-top: 4.5rem;
+}
+
+@media (max-width: 600px) {
+  .news-paragraph p {
+    font-size: 1.2rem !important;
+    line-height: 2.868rem;
+  }
+  .news h1 {
+    font-size: 2.2rem !important;
+  }
+  .news span {
+    font-size: 1.4rem !important;
+  }
 }

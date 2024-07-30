@@ -217,13 +217,14 @@
                         <h1>News</h1>
                     </div>
                     <div class="bg-container">
-                        <img class="bg-img" src="" alt="">
-                        <div class="news-content container container-home">
+                        <img class="bg-img" src="./images/bg-news.png" alt="">
+                        <div class="news-content container">
                             <div class="news-left">
                                 <img src="./images/isolation-mode.png" alt="" class="new-left-img">
                             </div>
                             <div class="news-right">
-                                <h2></h2>
+                                <h2>Resorts World Sentosa announced as</h2>
+                                <h2>Official Venue Partner for JIU ASIA 2024</h2>
                                 <span>July, 2024</span>
                                 <div class="btn-release wow fadeInRight delay07">
                                     <button class="btn btn-main">
@@ -479,30 +480,17 @@
     <script src="js/scrollspy.js" type="text/javascript"></script>
     <script src="js/jquery.sticky-kit.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script type="text/javascript">
-        fetch("https://lightswitchapi.com/io/a67f1f9f19e142d8b19ce0b391cd37a5/News/dev/news", {
-            method: "GET"
-        })
-            .then(response => response.json())
+        $('.ac').hc_countdown({
+            date: '08/28/2018 8:00:00',
+        });
 
-            .then(json => {
-                if (!json.success)
-                    throw new Error(json.message)
+        $('input').hc_upload({
+            multiple: true,
+            result: '.result',
+        });
 
-                const { title, timerelease, image } = json.data.records[0];
-                const titleElement = document.querySelector('.ct-news .bg-container .news-content .news-right h2');
-                const timeElement = document.querySelector('.ct-news .bg-container .news-content .news-right span');
-                const bgImg = document.querySelector('.ct-news .bg-container .bg-img');
-                const time = moment(timerelease).format('MMMM, YYYY');
-                titleElement.innerHTML = title;
-                timeElement.innerHTML = `${time}`;
-                bgImg.src = image;
-            })
-            .catch((error) => {
-                alert(error.message)
-            })
+        $('.acc').hc_accordion();
     </script>
 </body>
 
