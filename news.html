@@ -289,37 +289,20 @@
 <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <script type="text/javascript">
-    fetch("https://lightswitchapi.com/io/a67f1f9f19e142d8b19ce0b391cd37a5/Listnews/dev/users/authenticate", {
-        headers: {
-            "Content-type": "application/json"
-        },
-        method: "POST",
-        body: JSON.stringify({
-            "username": "phuonganh.do@nk-software.co",
-            "password": "Phanh2000@"
-        })
+    fetch("https://lightswitchapi.com/io/a67f1f9f19e142d8b19ce0b391cd37a5/Listnews/dev/item", {
+        method: "GET"
     })
         .then(response => response.json())
         .then(json => {
-            if (!json.success){
-                throw new Error(json.message)
-            }
-            const token = json.data.token.value;
-            /* Create, update data */
-            fetch("https://lightswitchapi.com/io/a67f1f9f19e142d8b19ce0b391cd37a5/Listnews/dev/item", {
-                method: "GET"
-            })
-                .then(response => response.json())
-                .then(json => {
 
-                    if (!json.success)
-                        throw new Error(json.message)
-                    const data = json?.data?.records || [];
-                    if (data.length > 0) {
-                        const newsGroup = document.querySelector('.news-group');
-                        newsGroup.innerHTML = data.map((item) => {
-                            return (
-                                `
+            if (!json.success)
+                throw new Error(json.message)
+            const data = json?.data?.records || [];
+            if (data.length > 0) {
+                const newsGroup = document.querySelector('.news-group');
+                newsGroup.innerHTML = data.map((item) => {
+                    return (
+                        `
                                     <div class="ct new-item">
                                         <div class="col-lg-5 new-item-img fadeInLeft delay02 wow">
                                             <img src="${item.image}" alt="">
@@ -329,14 +312,9 @@
                                         </div>
                                     </div>
                                 `
-                            );
-                        }).join(' ');
-                    }
-                })
-                .catch((error) => {
-                    alert(error.message)
-
-                })
+                    );
+                }).join(' ');
+            }
         })
         .catch((error) => {
             alert(error.message)
