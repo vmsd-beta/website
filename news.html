@@ -83,26 +83,13 @@
 
     <body>
     <section class="home-banner">
-        <a class="img" href="javascript:;"><img src="./images/banner-about.jpg" alt=""></a>
-        <div class="container container-home content-banner">
-            <span>ABOUT</span>
-            <h1 class="fadeInLeft delay02 wow">
-                Our Team
-            </h1>
-            <h1 class="fadeInRight delay02 wow" style="white-space: nowrap;">
-                Singapore • Malaysia • Hong Kong • Thailand
-            </h1>
-        </div>
+        <a class="img" href="javascript:;"><img src="./images/banner-news.jpg" alt=""></a>
     </section>
 
-    <section>
-        <div class="news container">
-            <h1></h1>
-            <span></span>
-        </div>
-        <img src="" class="news-img-detail" alt="">
-        <div class="news-paragraph container">
-            <p></p>
+    <section class="ct-main-group container">
+        <div class="news fadeInLeft delay02 wow">
+            <div class="el-group news-group">
+            </div>
         </div>
     </section>
 
@@ -262,28 +249,36 @@
 <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <script type="text/javascript">
-    fetch("https://lightswitchapi.com/io/a67f1f9f19e142d8b19ce0b391cd37a5/News/dev/news", {
+    fetch("https://lightswitchapi.com/io/a67f1f9f19e142d8b19ce0b391cd37a5/Listnews/dev/item", {
         method: "GET"
     })
         .then(response => response.json())
         .then(json => {
+
             if (!json.success)
                 throw new Error(json.message)
-
-            const converter = new showdown.Converter();
-            const { title, description, timerelease, image } = json.data.records[0];
-            const titleElement = document.querySelector('.news.container h1');
-            const timeElement = document.querySelector('.news.container span');
-            const descriptionElement = document.querySelector('.news-paragraph p');
-            const imageLarge = document.querySelector('.news-img-detail');
-            const time = moment(timerelease).format('MMMM, YYYY');
-            titleElement.innerHTML = title;
-            timeElement.innerHTML = `PRESS RELEASE, ${time}`;
-            imageLarge.src = image;
-            descriptionElement.innerHTML = converter.makeHtml(description);
+            const data = json?.data?.records || [];
+            if (data.length > 0) {
+                const newsGroup = document.querySelector('.news-group');
+                newsGroup.innerHTML = data.map((item) => {
+                    return (
+                        `
+                            <div class="ct new-item">
+                                <div class="col-lg-5 new-item-img fadeInLeft delay02 wow">
+                                    <img src="${item.image}" alt="">
+                                </div>
+                                <div class="col-lg-7 new-item-title fadeInRight delay02 wow">
+                                    <a href="${item.url}">${item.title}</a>
+                                </div>
+                            </div>
+                        `
+                    );
+                }).join(' ');
+            }
         })
         .catch((error) => {
             alert(error.message)
+
         })
 </script>
 </body>
