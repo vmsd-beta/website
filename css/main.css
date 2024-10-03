@@ -3201,8 +3201,8 @@ video {
 
 .news {
   margin: 0 auto;
-  margin-top: 12.5rem;
-  margin-bottom: 11.2rem;
+  margin-top: 11rem;
+  margin-bottom: 16rem;
 }
 .news h1 {
   margin: 5.6rem 0;
@@ -3214,6 +3214,7 @@ video {
   padding-top: 50px;
   padding-bottom: 50px;
   border-bottom: 1px solid #55575A;
+  margin: 0 !important;
 }
 .new-item .new-item-img {
   padding: 0 !important;
@@ -3236,6 +3237,9 @@ video {
     font-size: 1.4rem;
     font-weight: bold;
   }
+  .ct-main-group .el-group .ct {
+    margin: 0 !important;
+  }
 }
 @media (max-width: 998px) {
   .container {
@@ -3244,9 +3248,10 @@ video {
   }
   .news{
     margin-top: 6.5rem;
+    margin-bottom: 9rem;
   }
   .new-item {
-    padding: 20px 0;
+    padding: 50px 0;
   }
   .new-item .new-item-title {
     padding: 0!important;
