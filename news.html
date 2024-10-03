@@ -89,46 +89,6 @@
     <section class="ct-main-group container">
         <div class="news fadeInLeft delay02 wow">
             <div class="el-group news-group">
-                <div class="ct new-item">
-                    <div class="col-lg-5 new-item-img fadeInRight delay02 wow">
-                        <img src="./images/new1.jpg" alt="">
-                    </div>
-                    <div class="col-lg-7 new-item-title">
-                        <a href="https://www.scribblinggeek.com/index.php/2024/09/10/jiu-asia-2024-visit/">Discovering the Best of Asian Spirits and more at JIU ASIA 2024</a>
-                    </div>
-                </div>
-                <div class="ct new-item">
-                    <div class="col-lg-5 new-item-img fadeInLeft delay02 wow">
-                        <img src="./images/new2.jpg" alt="">
-                    </div>
-                    <div class="col-lg-7 new-item-title fadeInRight delay02 wow">
-                        <a href="https://aplussingapore.com/article/jiu-asia-2024">JIU ASIA returns with Asian-origin Spirits, Masterclasses, and Cocktail Contests</a>
-                    </div>
-                </div>
-                <div class="ct new-item">
-                    <div class="col-lg-5 new-item-img fadeInLeft delay02 wow">
-                        <img src="./images/new3.jpg" alt="">
-                    </div>
-                    <div class="col-lg-7 new-item-title fadeInRight delay02 wow">
-                        <a href="https://www.superadrianme.com/event/jiu-asia-2024-singapores-premier-asian-alcohol-expo-returns-to-resorts-world-sentosa-showcasing-100-brands-6-8-september/">JIU ASIA 2024: Singapore’s Premier Asian Alcohol Expo Returns</a>
-                    </div>
-                </div>
-                <div class="ct new-item">
-                    <div class="col-lg-5 new-item-img fadeInLeft delay02 wow">
-                        <img src="./images/new4.jpg" alt="">
-                    </div>
-                    <div class="col-lg-7 new-item-title fadeInRight delay02 wow">
-                        <a href="https://www.spiritedsingapore.com/event/jiu-asia-2024/">JIU ASIA returns with Asian-origin Spirits. Showcasing 100+ Brands </a>
-                    </div>
-                </div>
-                <div class="ct new-item">
-                    <div class="col-lg-5 new-item-img fadeInLeft delay02 wow">
-                        <img src="./images/new5.jpg" alt="">
-                    </div>
-                    <div class="col-lg-7 new-item-title fadeInRight delay02 wow">
-                        <a href="">Discovering the Best of Asian Spirits and more at JIU ASIA 2024</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -303,15 +263,15 @@
                 newsGroup.innerHTML = data.map((item) => {
                     return (
                         `
-                                    <div class="ct new-item">
-                                        <div class="col-lg-5 new-item-img fadeInLeft delay02 wow">
-                                            <img src="${item.image}" alt="">
-                                        </div>
-                                        <div class="col-lg-7 new-item-title fadeInRight delay02 wow">
-                                            <a href="${item.url}">${item.title}</a>
-                                        </div>
-                                    </div>
-                                `
+                            <div class="ct new-item">
+                                <div class="col-lg-5 new-item-img fadeInLeft delay02 wow">
+                                    <img src="${item.image}" alt="">
+                                </div>
+                                <div class="col-lg-7 new-item-title fadeInRight delay02 wow">
+                                    <a href="${item.url}">${item.title}</a>
+                                </div>
+                            </div>
+                        `
                     );
                 }).join(' ');
             }
