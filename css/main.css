@@ -3199,10 +3199,18 @@ video {
   }
 }
 
+.home-news-logo {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-news-logo .news-logo-title {
+  font-size: 3.2rem;
+  margin: 3.2rem 0;
+}
 .news {
-  margin: 0 auto;
-  margin-top: 11rem;
-  margin-bottom: 16rem;
+  margin: 11rem auto 16rem;
 }
 .news h1 {
   margin: 5.6rem 0;
