@@ -1760,6 +1760,7 @@ video {
 }
 .ct-news .bg-container img {
   width: 100%;
+  height: 100%;
 }
 .ct-news .bg-container .news-content {
   position: absolute;
@@ -2081,6 +2082,17 @@ video {
     width: 80%;
   }
 }
+@media (max-width: 375px) {
+  .ct-news .bg-container .news-content .news-right {
+    width: 80%;
+  }
+  .ct-news .news-right .news-right-text {
+    font-size: 1.1rem;
+  }
+  .ct-news .news-right .btn-release {
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 1190px) {
   .main-content .ct-concert {
     margin-top: 4.8rem;
@@ -2299,7 +2311,7 @@ video {
     font-size: 2.2rem !important;
   }
   .ct-news .bg-container .news-content .news-right h2 {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
   }
   .ct-recent-project h1 {
     font-size: 2.4rem !important;
@@ -2576,11 +2588,17 @@ video {
   .ct-news .title h1 {
     font-size: 1.4rem !important;
   }
+  .ct-news .bg-container {
+    height: 150px;
+  }
   .ct-news .bg-container .news-content .news-right h2 {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
   }
   .ct-news .bg-container .news-content .news-right span {
     font-size: 1rem !important;
+  }
+  .ct-news .bg-container .news-content .news-right .btn-release .btn-main {
+    font-size: 0.7rem !important;
   }
   .ct-recent-project .title h1 {
     font-size: 1.4rem !important;
@@ -3293,6 +3311,24 @@ video {
   }
   .new-item .new-item-title {
     margin-top: 1rem;
+  }
+}
+@media (max-width: 300px) {
+  .ct-news .bg-container .news-content .news-right h2 {
+    white-space: nowrap!important;
+    font-size: 0.8rem !important;
+  }
+  .ct-news .bg-container .news-content .news-right .btn-release .btn-main {
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .ct-news .title {
+    margin-top: 6rem;
+    margin-bottom: 5.5rem;
+  }
+  .ct-recent-project .title {
+    margin-top: 6rem;
   }
 }
 
