@@ -2589,10 +2589,14 @@ video {
     font-size: 1.4rem !important;
   }
   .ct-news .bg-container {
-    height: 110px;
+    height: 120px;
+  }
+  .ct-news .bg-container .news-content .news-right {
+    padding-left: 10px;
   }
   .ct-news .bg-container .news-content .news-right h2 {
     font-size: 1.1rem !important;
+    white-space: wrap !important;
   }
   .ct-news .bg-container .news-content .news-right span {
     font-size: 1rem !important;
@@ -3314,21 +3318,33 @@ video {
   }
 }
 @media (max-width: 300px) {
+  .ct-news .bg-container .news-content .news-right {
+    padding-left: 10px;
+  }
   .ct-news .bg-container .news-content .news-right h2 {
-    white-space: nowrap!important;
-    font-size: 0.8rem !important;
+    white-space: wrap!important;
+    font-size: 0.6rem !important;
+  }
+  .ct-news .bg-container .news-content .news-right span {
+    font-size: 0.6rem !important;
   }
   .ct-news .bg-container .news-content .news-right .btn-release .btn-main {
-    font-size: 0.7rem !important;
+    font-size: 0.4rem !important;
+    height: 1.8rem;
+    padding: 0 0.9rem !important;
+  }
+  .news-left {
+    width: 35%!important;
   }
 }
 @media (max-width: 540px) {
   .ct-news .title {
-    margin-top: 6rem;
-    margin-bottom: 5.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .ct-recent-project .title {
-    margin-top: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
   }
 }
 
