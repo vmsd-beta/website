@@ -2589,7 +2589,7 @@ video {
     font-size: 1.4rem !important;
   }
   .ct-news .bg-container {
-    height: 150px;
+    height: 110px;
   }
   .ct-news .bg-container .news-content .news-right h2 {
     font-size: 1.1rem !important;
@@ -3322,7 +3322,7 @@ video {
     font-size: 0.7rem !important;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   .ct-news .title {
     margin-top: 6rem;
     margin-bottom: 5.5rem;
