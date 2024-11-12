@@ -193,6 +193,9 @@ img {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
+.mt20p{
+  margin-top: 20px;
+}
 
 @media (max-width: 600px) {
   .container {
