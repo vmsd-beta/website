@@ -611,6 +611,11 @@ jQuery(function ($) {
                 $(".our-work").removeClass('active');
             });
 
+            $(".news-navbar").mouseenter(function () {
+                $(".el-page-lg").removeClass('on-our-work');
+                $(".our-work").removeClass('active');
+            });
+
             $(".contact-us").mouseenter(function () {
                 $(".el-page-lg").removeClass('on-our-work');
                 $(".our-work").removeClass('active');
